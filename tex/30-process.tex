@@ -1,6 +1,44 @@
 \newpage
 \section{实训主要内容及过程}
 
+% 实训总体流程示意（第2部分要求：程序与步骤记录）
+\begin{figure}[H]
+  \centering
+  % 统一箭头样式
+  	ikzset{>=Stealth}
+  % 时间线式概览（按 9/14--9/19 实际顺序）
+  \begin{tikzpicture}[
+    font=\scriptsize,
+    node distance=18mm and 16mm,
+    day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=left, text width=4.15cm, inner sep=3.2pt, fill=gray!4},
+    arrow/.style={->, thick},
+    dashedarrow/.style={->, thick, dashed}
+  ]
+    % 第一行（主时间轴上半）
+    \node[day] (d0) {\textbf{9/14}\newline 入厂安全教育\newline 工艺/机器人讲座\newline 初次示教操作\newline 6S 初训};
+    \node[day, right=of d0] (d1) {\textbf{9/15}\newline 东风日产总装线\newline (VCR→电气→内饰→玻璃→测试)\newline 观察：AGV 无磁条导航\newline 协同：人工+自动};
+    \node[day, right=of d1] (d2) {\textbf{9/16}\newline 印刷：制版/多色\newline 骆驼：极片→化成/回收\newline 关注：张力/色序 与\newline 化成曲线};
+    % 第二行（下半）
+    \node[day, below=of d0] (d3) {\textbf{9/17}\newline 精密加工参观\newline (滚齿/搓齿/热处理/磨削)\newline 关注：高能量工序安全\newline 刀具寿命};
+    \node[day, right=of d3] (d4) {\textbf{9/18}\newline 机器人编程进阶\newline 非标自动化线展示\newline 反思：示教缺力控\newline 风险点识别};
+    \node[day, right=of d4] (d5) {\textbf{9/19}\newline 6S 深化（5S→6S）\newline 讨论：防形式主义\newline 标识适度化};
+    % 总结节点置于下方居中偏右
+    \node[day, below=of d4, text width=4.4cm] (d6) {整理沉淀\newline 日志结构化\newline 问题清单梳理\newline 改进路线初稿};
+
+    % 主顺序箭头
+    \draw[arrow] (d0) -- (d1);
+    \draw[arrow] (d1) -- (d2);
+    \draw[arrow] (d0) -- (d3);
+    \draw[arrow] (d3) -- (d4);
+    \draw[arrow] (d4) -- (d5);
+    \draw[arrow] (d5) |- (d6);
+    % 跨域并发/交叉补充关系
+    \draw[dashedarrow] (d2) |- (d4);
+    \draw[dashedarrow] (d2) |- (d3);
+  \end{tikzpicture}
+  \caption{按实际日期重构的实训活动时间线（主箭头表示主序，虚线表示并发/交叉关注）}
+\end{figure}
+
 
 \subsection{襄阳东发实习服务有限公司}
 \subsubsection{实训预备}
@@ -101,4 +139,240 @@
   \item \textbf{企业文化墙及设备展示}：文化墙区域展示了 ABB 集团的 5CARA 机械臂与乘用车电气模型，反映出现代汽车生产广泛使用总线通信与高速网络。部分工位还配备无磁条导航 AGV、视频监控系统与安全标识设施，保障生产透明性与安全性。
 \end{itemize}
 
-\section{中印南方印刷有限司}
+% 汽车总装现场照片（无文字说明）
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6259中.jpeg}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6267中.jpeg}
+  \end{subfigure}
+\end{figure}
+
+\subsection{中印南方印刷有限公司}
+
+本节（归属报告第2部分）仅记录参观当日的实际操作流程与现场步骤，不展开性能指标或优缺点分析（相关分析内容已移至报告第3部分“实训典型设备或生产线重点分析”）。
+
+\subsubsection{CTP 制版现场记录}
+参观顺序：进入前端制版室 → 了解文件接收与预检 → 观察 RIP 与下发 → 观看制版机曝光与后处理。
+\begin{enumerate}[label=\arabic*.]
+  \item 客户/设计部门数字文件导入工作站，操作员进行预检（色彩模式、出血、分辨率、字体嵌入）。
+  \item RIP 处理：文件被栅格化与加网，生成用于直接制版的数据。
+  \item 下发：操作员在工作站直接下发任务至 CTP 制版机（无菲林输出环节）。
+  \item 制版：铝版装入，激光曝光形成潜影，随后依次进行显影、清洗、烘干、上胶保护。
+  \item 检查：查看套准与色控标记是否完整，合格版暂存待印。
+  \item 记录：现场口述单版大约 2–3 分钟完成（仅作当天观察记载）。
+\end{enumerate}
+
+\subsubsection{双色报纸机（BB 机）现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 观察卷筒纸上机与穿纸：操作员通过导纸路径将纸带引入印刷单元。
+  \item 同步正反面印刷：机组一次走纸完成正反面双色（或黑/红等简易配色）输出。
+  \item 现场关注点：张力指示表与套准监视窗口，操作员不定时查看并微调。
+  \item 成品折叠/送出：印后纸带进入折页与输送单元。
+  \item 记录：口述速度为“每小时数万份”级，未做仪器测量。
+\end{enumerate}
+
+\subsubsection{四色机组（彩色印刷）现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 参观 CMYK 四个色组依次叠印流程；
+  \item 观察操作台：有色密度显示/监控界面，操作员抽取样张放置于灯箱下对比；
+  \item 记录了抽检动作：使用放大镜观察网点与套准；
+  \item 了解到存在自动墨量/套准辅助系统，但细节未在此环节拆解；
+  \item 当日仅记录色序、抽检方式与样张呈现效果，不记录性能参数。 
+\end{enumerate}
+
+\subsubsection{TKS 八色轮转机现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 进入轮转机大厅前进行安全提示（噪声与旋转部件安全距离）。
+  \item 观察多卷自动接纸装置与张力控制界面；
+  \item 查看叠印单元与折页输出路径；
+  \item 现场人员口述“速度可达数以万计份/分钟”，此处仅按原话记录未核实型号规格；
+  \item 看到在线监视屏展示套准/断纸报警；
+  \item 未进行停机或分解演示，仅做外观与流程浏览。 
+\end{enumerate}
+
+\subsubsection{现场记录小结}
+当天在印刷企业主要完成：数字前端 → 制版 → 多机型印刷流程的串行参观，记录了关键操作顺序、抽检方式与操作员关注点；未开展系统性能测试与产能验证，性能分析部分转入第3部分。
+
+% 印刷车间照片（无文字说明）
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6304中.jpeg}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6338中.jpeg}
+  \end{subfigure}
+\end{figure}
+
+\subsection{骆驼集团新能源电池有限公司}
+本节（归属报告第2部分）记录各环节参观顺序与操作步骤要点；性能指标、参数影响与改进建议的系统分析移至第3部分。
+
+\subsubsection{参观总体顺序}
+极片车间 → 叠片/卷绕及装配 → 激光/焊接与极耳处理 → 注液与初封 → 化成与分容车间外观 → 老化与成品分级 → 回收展示区。
+
+\subsubsection{极片生产线现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 浆料配制：讲解搅拌罐与配方保密，仅口述“均质分散”。
+  \item 涂布：观察到双面涂布机，操作员查看涂布头间隙与张力界面。
+  \item 干燥：多段烘箱连线，通过窗口可见传送方向与排风。
+  \item 辊压：记录“调压力以控制厚度”，未读取具体数值。
+  \item 分切与卷取：看到自动对边与毛刺抽检样片。
+  \item 成型与抽检：抽检厚度/外观；提到日产约 120,000 片（现场口述）。
+\end{enumerate}
+
+\subsubsection{电芯装配现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 六轴机器人搬运极片至堆叠/对齐工位；
+  \item 夹具压实并定位，屏幕显示位置偏差；
+  \item 极耳焊接过程有火光遮蔽装置；
+  \item 注液工位封闭，说明需控制水分（未进入内部）；
+  \item 初封后放置周转架静置。
+\end{enumerate}
+
+\subsubsection{化成与分容现场记录}
+\begin{enumerate}[label=\arabic*.]
+  \item 观察三层化成架结构，操作员说明单层可放约 5,000 只；
+  \item 屏幕显示电压/电流曲线滚动，未抄录原始数据；
+  \item 口述化成用时约 8 小时/批，良率“约 98.5\%”；
+  \item 分容房间内有分类周转箱，用于不同容量等级暂存；
+  \item 老化区：成品电芯整齐码放，标识批次标签与时间。
+\end{enumerate}
+
+\subsubsection{产品与回收展示记录}
+\begin{itemize}
+  \item 展柜展示三元与 LFP 样品：标牌写能量密度约 250 Wh/kg（NCM）与 180 Wh/kg（LFP）。
+  \item 单体容量铭牌 2000–5000 mAh 区间样品若干。
+  \item 回收示意板：标注“综合回收率 98\%”“镍钴回收利用率 >95\%”，展示流程箭头（拆解→破碎→分选→湿法→提纯→再生）。
+\end{itemize}
+
+\subsubsection{现场记录小结}
+本次在骆驼集团重点完成极片到化成分容的全流程走访，记录各工序表面操作顺序、设备形态与口述产出数字；未在现场进行参数量化与性能优劣比较，相关分析安排在第3部分。
+
+% 电池生产相关照片（无文字说明）
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6367中.jpeg}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6406中.jpeg}
+  \end{subfigure}
+\end{figure}
+
+\subsection{湖北神誉机械制造有限公司}
+本节记录现场参观齿轮/齿轴类精密加工生产流程，列出当日观察到的主要工序与设备操作顺序（参数为现场讲解口述或铭牌观察，未做独立量化验证）。
+
+\subsubsection{参观流程顺序}
+毛坯来料与编号登记 → 五轴数控高速滚齿/粗加工 → （小模数零件）立式双伺服数控搓齿 → 去毛刺/清洗 → 热处理（淬火+回火）→ 精磨/倒角/修形 → 三坐标与齿轮测量 → 结果标识与入库。
+
+\subsubsection{现场设备与记录}
+\paragraph{五轴数控高速滚齿机} 主轴（口述）最高转速约 5000\,rpm，可实现多自由度联动以处理复杂齿形；讲解称齿形精度可达 DIN 6 级以上（未现场测量，仅记录）。
+\paragraph{CZL-16N 立式双伺服数控搓齿机} 适配小模数齿轮（m=0.3--2.0），搓齿速度约 1500 次/分钟（口述），强调表层冷作硬化与提高齿根疲劳强度；操作员演示自动上料与润滑喷雾。
+\paragraph{卧式七轴数控滚齿机} 一次装夹内完成滚切、修形与倒角，多轴协同减少重复装夹误差；观察到程序切换时操作员调用预置刀补表。
+\paragraph{热处理与磨削} 工件分批进入淬火炉后回火，说明目标硬度范围 58--62\,HRC；后续在磨齿机/外圆磨上完成精加工与表面质量提升。
+\paragraph{检测环节} 使用三坐标测量机与齿轮测量仪检测齿形误差、节距、跳动与同轴度；操作台屏幕显示检测曲线（未抄录具体数值）。
+
+\subsubsection{观察要点汇总}
+\begin{itemize}
+  \item 多机型配合以区分不同模数/精度等级加工路径；
+  \item 搓齿与滚齿在小模数齿轮上形成并行或顺序工艺选择；
+  \item 一次装夹复合加工（七轴机）降低累积误差；
+  \item 热处理后硬度抽检与齿形复测闭环；
+  \item 现场未对批次合格率与节拍作公开展示，仅记录工序顺序。
+\end{itemize}
+
+% 精密加工车间照片（无文字说明）
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6413中.jpeg}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6465中.jpeg}
+  \end{subfigure}
+\end{figure}
+
+\subsection{襄阳中基创展智能科技有限公司}
+本节记录锂电自动化生产设备参观流程，聚焦冲孔/装配/化成分容整线与自动包装单元的现场操作顺序（参数为现场口述或铭牌观察）。
+
+\subsubsection{参观流程顺序}
+极片冲孔/成型（高速自动冲床）→ 在线视觉检测与废品剔除 → 夹装/装配单元演示（部分工序模拟）→ 化成分容整线机架外观介绍 → 化成/分容批次能力说明 → 自动包装与贴标/热缩示范 → 分类入库堆垛区。
+
+\subsubsection{现场设备与记录}
+\paragraph{高速自动冲床（冲坑/冲孔工序）} 冲压频率现场口述约 120 次/分钟，冲孔/成型精度 ±0.02\,mm（以操作员口述与铭牌为准）；连续送料机构与模具导正销保持孔位一致性；废料通过下吸或侧向收集。
+\paragraph{在线视觉检测} 冲孔后极片通过相机采集图像，系统判定孔形、毛刺与缺口；缺陷触发气动剔除。未获取算法判定阈值，记录“全检+剔除”模式。
+\paragraph{自动装配/夹装单元} 展示对不同规格（如 18650、21700 壳体）夹持位置自适应调节；定位夹具与六轴机械臂协同，界面显示坐标与偏差提示。
+\paragraph{化成分容整线} 讲解多组化成架并行，单批处理能力约 15,000 只/批，化成周期口述约 48 小时（区别于另一企业 8 小时示例，已注明仅记录）；分容后分级分箱暂存。
+\paragraph{自动包装线} 外壳外观/字符检测 → 贴标 → 热缩包装 → 称重/扫码 → 按型号分类入库；口述节拍约 30 只/分钟。
+
+\subsubsection{观察要点汇总}
+\begin{itemize}
+  \item 冲孔精度依赖送料张力稳定与模具磨损管理；
+  \item 视觉全检是保证后续装配一致性的关键环节；
+  \item 化成周期较长被视作产线瓶颈（仅记录，不分析原因）；
+  \item 包装单元集成多检测功能减少人工复检；
+  \item 现场未开放底层数据（良率、能耗），不在本章展开分析。
+\end{itemize}
+
+\subsubsection{现场记录小结}
+该企业展示了从极片冲孔到化成分容及包装的部分自动化子系统，强调标准化接口与整线交付能力；本节仅记录流程与口述节拍，性能深度分析放在第3部分。
+
+% 自动化与 6S/包装相关照片（无文字说明）
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6467中.jpeg}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6565中.jpeg}
+  \end{subfigure}
+\end{figure}
+
+% 章节末尾图片拼贴（无说明）
+\begin{figure}[H]
+  \centering
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{cccc}
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6275中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6285中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6308中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6317中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6321中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6342中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6369中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6374中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6393中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6403中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6425中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6437中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6439中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6440中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6453中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6458中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6462中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6472中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6477中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6497中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6521中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6537中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6544中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6547中.jpeg} \\
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6548中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6550中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6552中.jpeg} &
+    \includegraphics[width=0.23\textwidth]{pic/_DSF6562中.jpeg} \\
+  \end{tabular}
+\end{figure}

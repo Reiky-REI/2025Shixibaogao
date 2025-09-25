@@ -35,9 +35,9 @@
 
 % Hyperlinks and References
 \usepackage{hyperref} % Clickable links
-% TikZ and Graphics
-%\usepackage{tikz}
-%\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+% TikZ and Graphics（用于流程示意图）
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
 % Lists and Enumeration
 \usepackage{enumitem} % Customize lists
 
@@ -57,20 +57,13 @@
 \usepackage{booktabs} % 专业表格
 \usepackage{setspace} %spacing
 
-% 字体设置：宋体（优先 SimSun / Songti SC / fallback FandolSong），西文 Times New Roman / fallback TeX Gyre Termes
-% 小四字号正文将在 main.tex \begin{document} 后设置 \zihao{-4}
-\ExplSyntaxOn
-\cs_new_protected:Npn \__try_set_cjk_main_font: {
-	\IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{
-		\IfFontExistsTF{Songti SC}{\setCJKmainfont{Songti SC}}{\IfFontExistsTF{FandolSong-Regular}{\setCJKmainfont{FandolSong-Regular}}{}}}}
-\cs_new_protected:Npn \__try_set_cjk_sans_font: {
-	\IfFontExistsTF{SimHei}{\setCJKsansfont{SimHei}}{\IfFontExistsTF{Heiti SC}{\setCJKsansfont{Heiti SC}}{\IfFontExistsTF{FandolHei-Regular}{\setCJKsansfont{FandolHei-Regular}}{}}}}
-\cs_new_protected:Npn \__try_set_latin_main_font: {
-	\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{}}}
-\__try_set_cjk_main_font:
-\__try_set_cjk_sans_font:
-\__try_set_latin_main_font:
-\ExplSyntaxOff
+% 字体设置：安装了 Noto CJK 后，显式指定，避免某些查看器不渲染嵌入。
+% 西文 Times New Roman 不一定存在，继续回退 TeX Gyre Termes。
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+% 中文主字体使用 Noto Serif CJK SC（思源宋体衍生包别名）；无衬线用 Noto Sans CJK SC。
+\IfFontExistsTF{Noto Serif CJK SC}{\setCJKmainfont{Noto Serif CJK SC}}{\setCJKmainfont{FandolSong-Regular}}
+\IfFontExistsTF{Noto Sans CJK SC}{\setCJKsansfont{Noto Sans CJK SC}}{\setCJKsansfont{FandolHei-Regular}}
+% 代码等宽若需要中文亦可：\IfFontExistsTF{Noto Sans Mono CJK SC}{\setCJKmonofont{Noto Sans Mono CJK SC}}{}
 
 \newcommand{\TitleCJKFont}[1]{#1}
 
