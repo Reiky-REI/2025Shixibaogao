@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}实训单位简介}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实训单位清单}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}实训单位介绍}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}实训主要内容及过程}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}襄阳东发实习服务有限公司}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}实训预备}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}实训内容}{4}{subsubsection.2.1.2}%
+\contentsline {paragraph}{\numberline {2.1.2.1}进厂规范}{4}{paragraph.2.1.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2}住宿行为规范}{4}{paragraph.2.1.2.2}%
+\contentsline {subsection}{\numberline {2.2}东风日产风神襄阳汽车有限公司}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}入厂准备}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}参观内容}{6}{subsubsection.2.2.2}%
+\contentsline {section}{\numberline {3}中印南方印刷有限司}{7}{section.3}%
+\contentsline {section}{\numberline {4}实训典型设备或生产线重点分析}{8}{section.4}%
+\contentsline {section}{\numberline {5}实训总结与分析}{9}{section.5}%
+\contentsfinish 

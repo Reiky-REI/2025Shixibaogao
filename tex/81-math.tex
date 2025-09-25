@@ -1,0 +1,107 @@
+\newpage
+\section{数学工具}
+
+\subsection{标记方法}
+\subsubsection{符号分类与表示}
+\begin{itemize}
+    \item \textbf{集合论符号}
+    \begin{itemize}
+        \item 元素归属：$ x \in A $ (\verb|\in|)
+        \item 空集：$ \varnothing $ (\verb|\varnothing|) 或 $\emptyset$ (\verb|\emptyset|)
+        \item 子集：$A \subset B$ (\verb|\subset|) 或 $A \subseteq B$ (\verb|\subseteq|)
+        \item 并集：$A \cup B$ (\verb|\cup|)
+        \item 笛卡尔积：$A \times B$ (\verb|\times|)
+    \end{itemize}
+
+    \item \textbf{逻辑符号}
+    \begin{itemize}
+        \item 全称量词：$\forall x \in X$ (\verb|\forall|)
+        \item 存在量词：$\exists y$ (\verb|\exists|)
+        \item 蕴含：$P \Rightarrow Q$ (\verb|\Rightarrow|)
+        \item 等价：$P \Leftrightarrow Q$ (\verb|\Leftrightarrow|)
+    \end{itemize}
+
+    \item \textbf{函数与运算}
+    \begin{itemize}
+        \item 函数定义：$f: X \to Y$ (\verb|\to|)
+        \item 复合函数：$f \circ g$ (\verb|\circ|)
+        \item 极限：$\lim_{x \to a} f(x)$ (\verb|\lim|)
+        \item 导数：$f'(x)$ 或 $\frac{df}{dx}$ (\verb|\frac|)
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{特殊符号规范}
+\begin{table}[h]
+    \centering
+    \caption{常见数学符号规范}
+    \begin{tabular}{lll}
+        \toprule
+        类型 & 推荐表示 & LaTeX代码 \\
+        \midrule
+        向量 & $\mathbf{v}$ & \verb|\mathbf{v}| \\
+        矩阵 & $\mathsf{M}$ & \verb|\mathsf{M}| \\
+        实数集 & $\mathbb{R}$ & \verb|\mathbb{R}| \\
+        复数 & $z \in \mathbb{C}$ & \verb|\mathbb{C}| \\
+        期望值 & $\mathbb{E}[X]$ & \verb|\mathbb{E}| \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{希腊字母体系}
+\begin{itemize}
+    \item 小写：$\alpha, \beta, \gamma$ (\verb|\alpha \beta \gamma|)
+    \item 大写：$\Gamma, \Delta, \Theta$ (\verb|\Gamma \Delta \Theta|)
+    \item 注意区分：
+    \begin{itemize}
+        \item $\epsilon$ (\verb|\epsilon|) 与 $\varepsilon$ (\verb|\varepsilon|)
+        \item $\phi$ (\verb|\phi|) 与 $\varphi$ (\verb|\varphi|)
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{符号使用规范}
+\begin{enumerate}
+    \item \textbf{首次定义原则}：新符号首次出现时必须明确说明
+    \begin{itemize}
+        设$\mathcal{H}$为希尔伯特空间，其中$\mathcal{H} \subset L^2(\mathbb{R})$
+    \end{itemize}
+
+    \item \textbf{字体语义}
+    \begin{itemize}
+        \item 手写体：$\mathscr{F}(f)$ 表示傅里叶变换 (\verb|\mathscr{F}|)
+        \item 黑板粗体：$\mathbb{N}$ 表示自然数集 (\verb|\mathbb{N}|)
+    \end{itemize}
+
+    \item \textbf{多学科符号}
+    \begin{itemize}
+        \item 物理与数学差异：$i$（虚数单位） vs $j$（工程学）
+        \item 概率论：$P(A)$ 与$\mathbb{P}(A)$的不同习惯
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{高级表示技巧}
+\begin{itemize}
+    \item 可调大小符号：$\left( \frac{a}{b} \right)$ (\verb|\left( \right)|)
+    \item 多行公式编号：
+    \begin{align}
+        f(x) &= x^2 + 2x + 1 \label{eq:1} \\
+             &= (x+1)^2 \label{eq:2}
+    \end{align}
+    (\verb|align|环境配合\verb|\label|)
+
+    \item 条件定义：
+    \[
+        \delta_{ij} = \begin{cases}
+        1 & \text{当 } i = j \\
+        0 & \text{其他情况}
+        \end{cases}
+    \]
+    (\verb|cases|环境)
+\end{itemize}
+
+建议在文档前言添加以下宏包：
+\begin{verbatim}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm}       % 粗体符号
+\usepackage{mathrsfs} % 手写体支持
+\usepackage{booktabs} % 专业表格
+\end{verbatim}

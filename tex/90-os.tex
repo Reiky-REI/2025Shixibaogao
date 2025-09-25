@@ -1,0 +1,87 @@
+\newpage
+\section{操作系统}
+在本项目的设计和建设过程中，针对不同的应用场景，
+引入多种不同的操作系统。
+
+\subsection{桌面操作系统}
+桌面操作系统为研究者使用的终端设备，
+因此对环境的要求不大，满足日常使用即可。
+
+\subsubsection{Windows\cite{windows11}}
+Windows 为微软公司开发的操作系统，安装于大多数个人及企业
+所购置的计算机设备上，兼容广泛。
+同时也是大部分商业软件的目标平台之一。
+
+\subsubsection{MacOS\cite{macOSSequoia}}
+MacOS 为苹果公司开发的操作系统，主要安装于苹果公司推出的设备上，以良好的生态著称。
+
+\subsubsection{linux发行版}
+基于linux内核的操作系统发行版：
+
+\paragraph{ubuntu\cite{ubuntuChina}}
+Canonical公司推出的开源操作系统，有极强的兼容性（附带大多数驱动），
+以用户友好著称。
+
+\paragraph{fedora\cite{fedoraProject}}
+RedHat公司推出的开源操作系统。
+
+\paragraph{debian\cite{debian}}
+部分桌面环境使用此操作系统。
+因为软件包更新较慢，所以大多运行与相对较旧的设备上
+
+\paragraph{arch linux\cite{archLinux}}
+部分桌面环境使用此操作系统。此操作系统使用结构简单的包管理器。
+大部分的复杂操作由用户完成。使用systemd，默认不启用任何服务，全部由用户决定。自定义程度较高。
+
+\paragraph{gentoo\cite{gentoo}}
+部分桌面环境使用此操作系统。此操作系统推荐从源代码构建所有软件包。
+有一套极为完善的源代码构建系统，自定义程度极高。
+
+\subsubsection{*bsd}
+MacOS的核心版本Darwin基于freebsd等类BSD操作系统，
+但是基于BSD系统配置开源图形化界面即为困难，
+外加上大部分开源软件的生态都是基于Linux系列操作系统的，
+本项目未涉及BSD操作系统。
+
+\subsection{服务器操作系统}
+
+\subsubsection{Windows}
+Windows 有特定的服务器版本。内置服务器需要的各种组件。
+
+\subsubsection{MacOS}
+苹果公司与2022年停止了MacOS server的开发，
+其他相关支持已于October 29, 2024,停止。
+
+\subsubsection{linux发行版}
+linux 发行版本大多数兼容POSIX标准，因此非常适合作为服务器使用。
+
+\paragraph{ubuntu}
+ubuntu的用户友好在服务器端也有良好的体现，其中预置的snap更带来了开箱即用的体验。
+
+\paragraph{fedora}
+红帽系列的发行版。
+
+\paragraph{debian}
+因为软件包更新周期很长，所以维护频率也不高。
+
+\paragraph{arch linux}
+archlinux更新非常频繁，所以不是很适合作为服务器系统，
+通常需要引入冗余备份才能够稳定使用。并且需要切换至更新不快的lts内核，
+否则需要经常重启，周期最短可至一天一次。
+
+\paragraph{gentoo}
+gentoo可以选择稳定分支的代码仓库，并且可以根据使用特定版本的软件包。
+虽然需要很长的时间上线，但是足够稳定。
+在相同型号设备很多的时候可以考虑。
+
+\subsection{嵌入式操作系统}
+
+\subsubsection{Windows}
+微软针对嵌入式设备提供windows IoT操作系统。
+
+\subsubsection{ubuntu}
+大多数嵌入式设备都会优先针对类debian操作系统适配操作系统。
+因此ubuntu通常是具备硬件厂商官方支持的发行版。
+
+\subsubsection{debian}
+同上

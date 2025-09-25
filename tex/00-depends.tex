@@ -1,0 +1,85 @@
+% =============================
+% 依赖与格式设置（不要在此文件使用 \documentclass）
+% 由 main.tex 控制文档类，使用 latexmk -xelatex 编译。
+% =============================
+
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2cm]{geometry}
+
+% 中文支持 (ctex 已包含 xeCJK 核心功能, 不要重复加载 xeCJK)
+\usepackage{ctex}
+
+% Font and Formatting (ctex 已自动加载 fontspec，这里不再手动设字体以避免缺失)
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+% Graphics and Figures
+\usepackage{graphicx} % For inserting images
+\usepackage{subcaption} % For subfigures
+\usepackage{overpic} % Overlay text on images
+\usepackage{float} % Control float placement
+\usepackage{caption} % Customize captions
+\usepackage{svg}
+% Mathematics
+\usepackage{amsmath} % Math formulas
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cases} % Numbered cases
+
+% Listings and Code
+\usepackage{listings} % Code listings
+
+% Tables and Arrays
+\usepackage{array} % Enhanced table features
+
+% (报告不需要参考文献，移除 cite / gbt7714)
+
+% Hyperlinks and References
+\usepackage{hyperref} % Clickable links
+% TikZ and Graphics
+%\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+% Lists and Enumeration
+\usepackage{enumitem} % Customize lists
+
+% Titles and Table of Contents
+\usepackage{titlesec} % Customize section titles
+\usepackage{titletoc} % Customize table of contents
+
+% Miscellaneous
+\usepackage{fancyhdr} % Customize headers and footers
+\usepackage{ulem} % Underlining
+\usepackage{collcell} % Cell manipulation
+\usepackage{xparse} % Parsing commands
+\usepackage{etoolbox} % Programming tools
+
+\usepackage{bm}       % 粗体符号
+\usepackage{mathrsfs} % 手写体支持
+\usepackage{booktabs} % 专业表格
+\usepackage{setspace} %spacing
+
+% 字体设置：宋体（优先 SimSun / Songti SC / fallback FandolSong），西文 Times New Roman / fallback TeX Gyre Termes
+% 小四字号正文将在 main.tex \begin{document} 后设置 \zihao{-4}
+\ExplSyntaxOn
+\cs_new_protected:Npn \__try_set_cjk_main_font: {
+	\IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{
+		\IfFontExistsTF{Songti SC}{\setCJKmainfont{Songti SC}}{\IfFontExistsTF{FandolSong-Regular}{\setCJKmainfont{FandolSong-Regular}}{}}}}
+\cs_new_protected:Npn \__try_set_cjk_sans_font: {
+	\IfFontExistsTF{SimHei}{\setCJKsansfont{SimHei}}{\IfFontExistsTF{Heiti SC}{\setCJKsansfont{Heiti SC}}{\IfFontExistsTF{FandolHei-Regular}{\setCJKsansfont{FandolHei-Regular}}{}}}}
+\cs_new_protected:Npn \__try_set_latin_main_font: {
+	\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{}}}
+\__try_set_cjk_main_font:
+\__try_set_cjk_sans_font:
+\__try_set_latin_main_font:
+\ExplSyntaxOff
+
+\newcommand{\TitleCJKFont}[1]{#1}
+
+% 页眉页脚：居中显示标题，页脚页码
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\fancyhead[C]{\zihao{5} 天津理工大学《生产实习》报告}
+\fancyfoot[C]{\zihao{6} \thepage}
+
+% 统一行距
+\onehalfspacing

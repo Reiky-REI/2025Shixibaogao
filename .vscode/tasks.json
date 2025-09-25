@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile LaTeX (XeLaTeX)",
+            "type": "shell",
+            "command": "latexmk -xelatex -interaction=nonstopmode -synctex=1 main.tex",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean LaTeX",
+            "type": "shell",
+            "command": "latexmk -C main.tex",
+            "problemMatcher": []
+        }
+    ]
+}

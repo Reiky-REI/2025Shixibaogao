@@ -1,0 +1,136 @@
+% Define custom counters
+\newcounter{sectiontoc}
+\newcounter{subsectiontoc}
+\newcounter{subsubsectiontoc}
+\newcounter{paragraphtoc}
+
+% appendix utils
+% Define a flag for appendix
+\newbool{inappendix}
+\setbool{inappendix}{false}
+% Redefine \appendix to set the flag
+\let\oldappendix\appendix
+\renewcommand{\appendix}{
+  \setbool{inappendix}{true}
+  \oldappendix
+}
+
+% title and toc customization
+
+% First level: 第\chinese{section}章
+% Second level: 一、
+% Third level: 1.
+% Fourth level: (1)
+% Increment counters in titlecontents with condition
+\titlecontents{section}[0pt]{\normalfont\normalsize}{
+  \ifnum\value{sectiontoc}>4 % Condition: skip numbering if sectiontoc is greater than 2
+    \stepcounter{sectiontoc} % Increment counter without displaying\
+    \hspace{1em} % Adjust spacing for unnumbered section
+  \else
+    \stepcounter{sectiontoc}\hspace{1em}第\chinese{sectiontoc}章\ 
+  \fi
+  \setcounter{subsectiontoc}{0}\
+  \setcounter{subsubsectiontoc}{0}\
+  \setcounter{paragraphtoc}{0}\
+}{\hspace{1.5em}}{\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{subsection}[2em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{subsectiontoc}\chinese{subsectiontoc}、\
+  \setcounter{subsubsectiontoc}{0}\
+  \setcounter{paragraphtoc}{0}\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{subsubsection}[2.5em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{subsubsectiontoc}\arabic{subsubsectiontoc}.\
+  \setcounter{paragraphtoc}{0}\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{paragraph}[3em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{paragraphtoc}(\arabic{paragraphtoc})\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
+
+% First level: 小三、黑体、居中、1.5倍行间距
+\titleformat{\section}
+  {\centering\normalfont\sffamily\zihao{-3}}
+  {\ifbool{inappendix}{}{第\chinese{section}章\hspace{1em}}}
+  {0pt}{}
+%\titlespacing{\section}{0pt}{*2}{*1.5}
+\titlespacing{\section}{0pt}{1\baselineskip}{1\baselineskip}
+% Second level: 四号、黑体、顶头、1.5倍行间距
+\titleformat{\subsection}{\normalfont\sffamily\zihao{4}}{\chinese{subsection}、}{1em}{}
+%\titlespacing{\subsection}{0pt}{*2}{*1.5}
+%\titlespacing{\subsection}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+% Third and Fourth levels: 小四、宋体、1.5倍行距
+\titleformat{\subsubsection}{\normalfont\sffamily\zihao{-4}}{\arabic{subsubsection}.}{1em}{}
+%\titlespacing{\subsubsection}{0pt}{*2}{*1.5}
+%\titlespacing{\subsubsection}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+\titleformat{\paragraph}[runin]{\normalfont\sffamily\zihao{-4}}{(\arabic{paragraph})}{1em}{}
+%\titlespacing{\paragraph}{0pt}{*2}{*1.5}
+%\titlespacing{\paragraph}{0pt}{1.5\baselineskip}{1.5\baselineskip}
+% Set depth for numbering and TOC
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+% 设置正文格式
+%\doublespacing
+%\onehalfspacing
+%\normalsize
+%\renewcommand{\arraystretch}{1.5}
+%\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\baselinestretch}{1.5}
+
+\setlength{\parindent}{2em} % 缩进
+%\renewcommand{\rmdefault}{song} % 宋体
+
+%\setwordspacing
+% Custom formats for the table of contents
+% Remove numbering in the table of contents
+% \renewcommand{\cftsecpresnum}{}
+% \renewcommand{\cftsecaftersnum}{}
+% \renewcommand{\cftsubsecpresnum}{}
+% \renewcommand{\cftsubsecaftersnum}{}
+
+\ExplSyntaxOn
+% This macro based on https://tex.stackexchange.com/a/25704/
+\NewDocumentCommand {\hfillspace}
+  { > { \SplitList { ~ } } m }
+  { \tl_map_inline:nn {#1} { ##1\hfill } }
+\ExplSyntaxOff
+\newcounter{myline}
+\AtBeginEnvironment{tabular}{\setcounter{myline}{0}}
+%\begin{tabular}{>{\stepcounter{myline}\themyline\quad\collectcell\hfillspace}p{.9\columnwidth}<{\endcollectcell}}
+%font
+% 字体已在 00-depends.tex 中统一设置（含自动检测与回退），此处不再重复，以避免未安装字体时报错。
+% 如需局部改变标题字体，可使用 \TitleCJKFont 命令包装。
+
+%\setCJKsansfont{NotoSansMNerdFont-Regular} % 设置黑体为无衬线字体
+%\setCJKmainfont{NotoSerifNerdFont-Regular} % 设置宋体为主字体
+%\renewcommand{\cfttoctitlefont}{\hfill\Huge\bfseries}
+%\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\contentsname}{ \centering{目\hspace{1em}录}}
+%\renewcommand{\contentsname}{\centering Table of Contents}
+\newcommand{\fixedunderline}[2][6cm]{\underline{\makebox[#1][c]{#2}}}
+
+% code block
+% example:
+% \lstinputlisting{/path/to/your/codefile.m}
+\lstset{
+  language=Matlab, % or the language of your code
+  basicstyle=\ttfamily, % Set the font style
+  numbers=left, % Add line numbers on the left
+  numberstyle=\tiny, % Style for line numbers
+  stepnumber=1, % Line number step
+  numbersep=5pt, % Distance from code
+  showspaces=false, % Don't show spaces
+  showstringspaces=false, % Don't show spaces in strings
+  showtabs=false, % Don't show tabs
+  frame=single, % Frame around code
+  tabsize=2, % Size of tabs
+  breaklines=true, % Enable line breaking
+  breakatwhitespace=true, % Break at whitespace
+  captionpos=b, % Position of caption
+  keepspaces=true, % Keep spaces in text
+  columns=flexible, % Adjust column width
+}
+
