@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.9.25)  25 SEP 2025 17:45
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.9.25)  25 SEP 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,6 +600,16 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \backup@length=\skip66
 \ar@cellbox=\box66
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen283
+\TX@old@table=\dimen284
+\TX@old@col=\dimen285
+\TX@target=\dimen286
+\TX@delta=\dimen287
+\TX@cols=\count338
+\TX@ftn=\toks41
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
@@ -630,15 +640,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count338
+\c@section@level=\count339
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count339
+\etb@tempcnta=\count340
 )
-\@linkdim=\dimen283
-\Hy@linkcounter=\count340
-\Hy@pagecounter=\count341
+\@linkdim=\dimen288
+\Hy@linkcounter=\count341
+\Hy@pagecounter=\count342
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -646,7 +656,7 @@ File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count342
+\Hy@SavedSpaceFactor=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -659,14 +669,14 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count343
+\c@Hy@tempcnt=\count344
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen284
+\XeTeXLinkMargin=\dimen289
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -675,9 +685,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count344
-\Field@Width=\dimen285
-\Fld@charsize=\dimen286
+\Fld@menulength=\count345
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -690,9 +700,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count345
-\c@Item=\count346
-\c@Hfootnote=\count347
+\Hy@abspage=\count346
+\c@Item=\count347
+\c@Hfootnote=\count348
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -704,10 +714,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box67
-\c@Hy@AnnotLevel=\count348
-\HyField@AnnotCount=\count349
-\Fld@listcount=\count350
-\c@bookmark@seq@number=\count351
+\c@Hy@AnnotLevel=\count349
+\HyField@AnnotCount=\count350
+\Fld@listcount=\count351
+\c@bookmark@seq@number=\count352
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -725,30 +735,254 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen292
+\pgfmath@count=\count353
+\pgfmath@box=\box68
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count354
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen293
+\pgf@picmaxx=\dimen294
+\pgf@picminy=\dimen295
+\pgf@picmaxy=\dimen296
+\pgf@pathminx=\dimen297
+\pgf@pathmaxx=\dimen298
+\pgf@pathminy=\dimen299
+\pgf@pathmaxy=\dimen300
+\pgf@xx=\dimen301
+\pgf@xy=\dimen302
+\pgf@yx=\dimen303
+\pgf@yy=\dimen304
+\pgf@zx=\dimen305
+\pgf@zy=\dimen306
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen307
+\pgf@path@lasty=\dimen308
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen309
+\pgf@shorten@start@additional=\dimen310
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box69
+\pgf@hbox=\box70
+\pgf@layerbox@main=\box71
+\pgf@picture@serial@count=\count355
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen311
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen312
+\pgf@pt@y=\dimen313
+\pgf@pt@temp=\dimen314
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen315
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen316
+\pgf@sys@shading@range@num=\count356
+\pgf@shadingcount=\count357
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box72
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box73
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen317
+\pgf@nodesepend=\dimen318
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen319
+\pgffor@skip=\dimen320
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count358
+\pgfplotmarksize=\dimen321
+)
+\tikz@lastx=\dimen322
+\tikz@lasty=\dimen323
+\tikz@lastxsaved=\dimen324
+\tikz@lastysaved=\dimen325
+\tikz@lastmovetox=\dimen326
+\tikz@lastmovetoy=\dimen327
+\tikzleveldistance=\dimen328
+\tikzsiblingdistance=\dimen329
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count359
+\tikznumberofchildren=\count360
+\tikznumberofcurrentchild=\count361
+\tikz@fig@count=\count362
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count363
+\pgfmatrixcurrentcolumn=\count364
+\pgf@matrix@numberofcolumns=\count365
+)
+\tikz@expandcount=\count366
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen330
+\pgfarrowlength=\dimen331
+\pgfarrowwidth=\dimen332
+\pgfarrowlinewidth=\dimen333
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip68
-\enit@outerparindent=\dimen287
-\enit@toks=\toks41
-\enit@inbox=\box68
-\enit@count@id=\count352
-\enitdp@description=\count353
+\enit@outerparindent=\dimen334
+\enit@toks=\toks47
+\enit@inbox=\box78
+\enit@count@id=\count367
+\enitdp@description=\count368
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box69
+\ttl@box=\box79
 \beforetitleunit=\skip69
 \aftertitleunit=\skip70
-\ttl@plus=\dimen288
-\ttl@minus=\dimen289
-\ttl@toksa=\toks42
-\titlewidth=\dimen290
-\titlewidthlast=\dimen291
-\titlewidthfirst=\dimen292
+\ttl@plus=\dimen335
+\ttl@minus=\dimen336
+\ttl@toksa=\toks48
+\titlewidth=\dimen337
+\titlewidthlast=\dimen338
+\titlewidthfirst=\dimen339
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
-\ttl@leftsep=\dimen293
+\ttl@leftsep=\dimen340
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
@@ -764,20 +998,20 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip79
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box70
-\UL@hyphenbox=\box71
+\UL@box=\box80
+\UL@hyphenbox=\box81
 \UL@skip=\skip80
-\UL@hook=\toks43
-\UL@height=\dimen294
-\UL@pe=\count354
-\UL@pixel=\dimen295
-\ULC@box=\box72
+\UL@hook=\toks49
+\UL@height=\dimen341
+\UL@pe=\count369
+\UL@pixel=\dimen342
+\ULC@box=\box82
 Package: ulem 2019/11/18
-\ULdepth=\dimen296
+\ULdepth=\dimen343
 )
 (/usr/share/texlive/texmf-dist/tex/latex/collcell/collcell.sty
 Package: collcell 2011/02/27 v0.5 Collect the content of a tabular cell
-\collect@cell@count=\count355
+\collect@cell@count=\count370
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
@@ -795,34 +1029,858 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen297
-\lightrulewidth=\dimen298
-\cmidrulewidth=\dimen299
-\belowrulesep=\dimen300
-\belowbottomsep=\dimen301
-\aboverulesep=\dimen302
-\abovetopsep=\dimen303
-\cmidrulesep=\dimen304
-\cmidrulekern=\dimen305
-\defaultaddspace=\dimen306
-\@cmidla=\count356
-\@cmidlb=\count357
-\@aboverulesep=\dimen307
-\@belowrulesep=\dimen308
-\@thisruleclass=\count358
-\@lastruleclass=\count359
-\@thisrulewidth=\dimen309
+\heavyrulewidth=\dimen344
+\lightrulewidth=\dimen345
+\cmidrulewidth=\dimen346
+\belowrulesep=\dimen347
+\belowbottomsep=\dimen348
+\aboverulesep=\dimen349
+\abovetopsep=\dimen350
+\cmidrulesep=\dimen351
+\cmidrulekern=\dimen352
+\defaultaddspace=\dimen353
+\@cmidla=\count371
+\@cmidlb=\count372
+\@aboverulesep=\dimen354
+\@belowrulesep=\dimen355
+\@thisruleclass=\count373
+\@lastruleclass=\count374
+\@thisrulewidth=\dimen356
 )
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-))
-(./tex/01-credits.tex) (./tex/05-formats.tex
-\c@sectiontoc=\count360
-\c@subsectiontoc=\count361
-\c@subsubsectiontoc=\count362
-\c@paragraphtoc=\count363
-\c@myline=\count364
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks50
+\MT@tempbox=\box83
+\MT@count=\count375
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks51
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen357
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count376
 
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2023/03/13 v3.1a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 238.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
+
+Package fontspec Info: Font family 'TeXGyreTermes(0)' created for font 'TeX
+(fontspec)             Gyre Termes' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"TeX Gyre
+(fontspec)             Termes/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"TeX Gyre
+(fontspec)             Termes/OT:script=latn;language=dflt;+smcp;mapping=tex-te
+xt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"TeX Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"TeX
+(fontspec)             Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"TeX Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"TeX Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;+smcp;mapping=tex
+-text;"
+
+
+
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
+(xeCJK)                (FandolSong-Regular(0)).
+
+
+Package fontspec Info: Could not resolve font "Noto Serif CJK SC/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Font family 'NotoSerifCJKSC(0)' created for font 'Noto
+(fontspec)             Serif CJK SC' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Noto Serif CJK
+(fontspec)             SC/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Noto Serif CJK
+(fontspec)             SC/B/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Noto Serif
+(fontspec)             CJK SC/BI/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+Package xeCJK Warning: Redefining CJKfamily `\CJKsfdefault'
+(xeCJK)                (FandolHei-Regular).
+
+) (./tex/01-credits.tex) (./tex/05-formats.tex
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ^^Ii
+        tlecontents{section}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \thecontentspage 
+                            
+l.10   {\titlerule*[0.5pc]{.}\contentspage}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ^^Ii
+         tlecontents{subsection}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \thecontentspage 
+                            
+l.17   {\titlerule*[0.5pc]{.}\contentspage}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ^^Ii
+         tlecontents{subsubsection}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \thecontentspage 
+                            
+l.24   {\titlerule*[0.5pc]{.}\contentspage}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ^^Ii
+         tlecontents{paragraph}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \thecontentspage 
+                            
+l.31   {\titlerule*[0.5pc]{.}\contentspage}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ^^Ii
+         tleformat{\section}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.35 ^^Iitleformat{\section}
+                            
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.35 ^^Iitleformat{\section}
+                            
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37   {第
+         \chinese{section}章}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.39 ^^Iitlespacing{\section}
+                             {0pt}{1\baselineskip}{1\baselineskip}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.39 ^^Iitlespacing{\section}
+                             {0pt}{1\baselineskip}{1\baselineskip}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ^^Iitlespacing{\section}{0
+                               pt}{1\baselineskip}{1\baselineskip}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.39 ^^Iitlespacing{\section}{0pt}{1\baselineskip}
+                                                  {1\baselineskip}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.39 ^^Iitlespacing{\section}{0pt}{1\baselineskip}
+                                                  {1\baselineskip}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.39 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.39 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ^^Ii
+         tleformat{\subsection}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.42 ^^Iitleformat{\subsection}
+                               
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.42 ^^Iitleformat{\subsection}
+                               
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44   {\chinese{subsection}
+                            、}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.46 ^^Iitlespacing{\subsection}
+                                {0pt}{0.8\baselineskip}{0.6\baselineskip}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.46 ^^Iitlespacing{\subsection}
+                                {0pt}{0.8\baselineskip}{0.6\baselineskip}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ^^Iitlespacing{\subsection}{0
+                                  pt}{0.8\baselineskip}{0.6\baselineskip}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.46 ...pacing{\subsection}{0pt}{0.8\baselineskip}
+                                                  {0.6\baselineskip}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.46 ...pacing{\subsection}{0pt}{0.8\baselineskip}
+                                                  {0.6\baselineskip}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.46 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.46 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ^^Ii
+         tleformat{\subsubsection}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.49 ^^Iitleformat{\subsubsection}
+                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.49 ^^Iitleformat{\subsubsection}
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51   {\arabic{subsubsection}
+                              .}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.53 ^^Iitlespacing{\subsubsection}
+                                   {0pt}{0.7\baselineskip}{0.4\baselineskip}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.53 ^^Iitlespacing{\subsubsection}
+                                   {0pt}{0.7\baselineskip}{0.4\baselineskip}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 ^^Iitlespacing{\subsubsection}{0
+                                     pt}{0.7\baselineskip}{0.4\baselineskip}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.53 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
+                                                  {0.4\baselineskip}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.53 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
+                                                  {0.4\baselineskip}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.53 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.53 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ^^Ii
+         tleformat{\paragraph}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.56 ^^Iitleformat{\paragraph}
+                              
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.56 ^^Iitleformat{\paragraph}
+                              
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58   {(
+         \arabic{paragraph})}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.60 ^^Iitlespacing{\paragraph}
+                               {0pt}{0.6\baselineskip}{0.2\baselineskip}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.60 ^^Iitlespacing{\paragraph}
+                               {0pt}{0.6\baselineskip}{0.2\baselineskip}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ^^Iitlespacing{\paragraph}{0
+                                 pt}{0.6\baselineskip}{0.2\baselineskip}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.60 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
+                                                  {0.2\baselineskip}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.60 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
+                                                  {0.2\baselineskip}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.60 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.60 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66     i
+          tleformat{\section}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.66     itleformat{\section}
+                             
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.66     itleformat{\section}
+                             
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package etoolbox Error: Boolean '\ifinappendix' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68   {\ifbool{inappendix}
+                           {}{第\chinese{section}章\hspace{1em}}}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69   {0
+         pt}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.73     itleformat{\subsection}
+                                {\normalfont\zihao{4}}{\chinese{subsection}、...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.73     itleformat{\subsection}
+                                {\normalfont\zihao{4}}{\chinese{subsection}、...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...\normalfont\zihao{4}}{\chinese{subsection}
+                                                  、}{1em}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.77     itleformat{\subsubsection}
+                                   {\normalfont\zihao{-4}}{\arabic{subsubsec...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.77     itleformat{\subsubsection}
+                                   {\normalfont\zihao{-4}}{\arabic{subsubsec...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 ...rmalfont\zihao{-4}}{\arabic{subsubsection}
+                                                  .}{1em}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Argument of \@xdblarg has an extra }.
+<inserted text> 
+                \par 
+l.80     itleformat{\paragraph}
+                               [runin]{\normalfont\zihao{-4}}{(\arabic{parag...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@xdblarg was complete.
+<to be read again> 
+                   \par 
+l.80     itleformat{\paragraph}
+                               [runin]{\normalfont\zihao{-4}}{(\arabic{parag...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80     itleformat{\paragraph}[
+                                runin]{\normalfont\zihao{-4}}{(\arabic{parag...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@myline=\count377
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )) (./main.aux)
@@ -916,25 +1974,32 @@ LaTeX Font Info:    Redeclaring symbol font `operators' on input line 8.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 8.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 8.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 8
+.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `bold' on input line 8.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 8.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 
+8.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 8.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on 
+input line 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 8.
+(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line
+ 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 8.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 
+8.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 8.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 8.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on 
+input line 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 8.
+(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input lin
+e 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 8.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
@@ -944,13 +2009,33 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count365
+\c@lstlisting=\count378
 Package hyperref Info: Link coloring OFF on input line 8.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
- (./tex/10-frontpage.tex
+LaTeX Info: Redefining \microtypecontext on input line 8.
+Package microtype Info: Applying patch `item' on input line 8.
+Package microtype Info: Applying patch `toc' on input line 8.
+Package microtype Info: Applying patch `eqnum' on input line 8.
+
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 8.
+
+Package microtype Info: Applying patch `verbatim' on input line 8.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TeXGyreTermes' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(./tex/10-frontpage.tex [1
+
+]
 File: ./assets/tjut_logo.jpg Graphic file (type bmp)
 <./assets/tjut_logo.jpg>
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 7.
@@ -959,10 +2044,20 @@ LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
 LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
 
@@ -973,50 +2068,215 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
-[1
-
-]
-
-Package fontspec Warning: Font "FandolHei-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
-(fontspec)             'FandolHei-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolHei-Bold}
-].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolHei-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[FandolHei-Bold.otf]/OT:language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-
-(./main.toc)
+[2] (./main.toc [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1]) (./tex/20-abstrcat.tex [1] [2]) (./tex/30-process.tex
-[3] [4] [5] [6]) (./tex/40-analyze.tex [7]) (./tex/49-summary.tex [8])
-(./tex/50-append.tex [9]) (./main.aux)
+ [2]) (./tex/20-abstrcat.tex [1] [2]) (./tex/30-process.tex [3] [4] [5] [6]
+File: pic/_DSF6259中.jpeg Graphic file (type bmp)
+<pic/_DSF6259中.jpeg>
+File: pic/_DSF6267中.jpeg Graphic file (type bmp)
+<pic/_DSF6267中.jpeg>
+ [7] [8]
+File: pic/_DSF6304中.jpeg Graphic file (type bmp)
+<pic/_DSF6304中.jpeg>
+File: pic/_DSF6338中.jpeg Graphic file (type bmp)
+<pic/_DSF6338中.jpeg>
+ [9]
+File: pic/_DSF6367中.jpeg Graphic file (type bmp)
+<pic/_DSF6367中.jpeg>
+File: pic/_DSF6406中.jpeg Graphic file (type bmp)
+<pic/_DSF6406中.jpeg>
+ [10] [11]
+File: pic/_DSF6413中.jpeg Graphic file (type bmp)
+<pic/_DSF6413中.jpeg>
+File: pic/_DSF6465中.jpeg Graphic file (type bmp)
+<pic/_DSF6465中.jpeg>
+ [12]
+File: pic/_DSF6275中.jpeg Graphic file (type bmp)
+<pic/_DSF6275中.jpeg>
+File: pic/_DSF6285中.jpeg Graphic file (type bmp)
+<pic/_DSF6285中.jpeg>
+File: pic/_DSF6308中.jpeg Graphic file (type bmp)
+<pic/_DSF6308中.jpeg>
+File: pic/_DSF6317中.jpeg Graphic file (type bmp)
+<pic/_DSF6317中.jpeg>
+File: pic/_DSF6321中.jpeg Graphic file (type bmp)
+<pic/_DSF6321中.jpeg>
+File: pic/_DSF6342中.jpeg Graphic file (type bmp)
+<pic/_DSF6342中.jpeg>
+File: pic/_DSF6369中.jpeg Graphic file (type bmp)
+<pic/_DSF6369中.jpeg>
+File: pic/_DSF6374中.jpeg Graphic file (type bmp)
+<pic/_DSF6374中.jpeg>
+File: pic/_DSF6393中.jpeg Graphic file (type bmp)
+<pic/_DSF6393中.jpeg>
+File: pic/_DSF6403中.jpeg Graphic file (type bmp)
+<pic/_DSF6403中.jpeg>
+File: pic/_DSF6425中.jpeg Graphic file (type bmp)
+<pic/_DSF6425中.jpeg>
+File: pic/_DSF6437中.jpeg Graphic file (type bmp)
+<pic/_DSF6437中.jpeg>
+File: pic/_DSF6439中.jpeg Graphic file (type bmp)
+<pic/_DSF6439中.jpeg>
+File: pic/_DSF6440中.jpeg Graphic file (type bmp)
+<pic/_DSF6440中.jpeg>
+File: pic/_DSF6453中.jpeg Graphic file (type bmp)
+<pic/_DSF6453中.jpeg>
+File: pic/_DSF6458中.jpeg Graphic file (type bmp)
+<pic/_DSF6458中.jpeg>
+File: pic/_DSF6462中.jpeg Graphic file (type bmp)
+<pic/_DSF6462中.jpeg>
+File: pic/_DSF6472中.jpeg Graphic file (type bmp)
+<pic/_DSF6472中.jpeg>
+File: pic/_DSF6477中.jpeg Graphic file (type bmp)
+<pic/_DSF6477中.jpeg>
+File: pic/_DSF6497中.jpeg Graphic file (type bmp)
+<pic/_DSF6497中.jpeg>
+File: pic/_DSF6521中.jpeg Graphic file (type bmp)
+<pic/_DSF6521中.jpeg>
+File: pic/_DSF6537中.jpeg Graphic file (type bmp)
+<pic/_DSF6537中.jpeg>
+File: pic/_DSF6544中.jpeg Graphic file (type bmp)
+<pic/_DSF6544中.jpeg>
+File: pic/_DSF6547中.jpeg Graphic file (type bmp)
+<pic/_DSF6547中.jpeg>
+File: pic/_DSF6548中.jpeg Graphic file (type bmp)
+<pic/_DSF6548中.jpeg>
+File: pic/_DSF6550中.jpeg Graphic file (type bmp)
+<pic/_DSF6550中.jpeg>
+File: pic/_DSF6552中.jpeg Graphic file (type bmp)
+<pic/_DSF6552中.jpeg>
+File: pic/_DSF6562中.jpeg Graphic file (type bmp)
+<pic/_DSF6562中.jpeg>
+) (./tex/40-analyze.tex [13]
+[14] [15] [16] [17] [18] [19]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ^^Iext{OEE} = A \times
+                            P \times Q,\quad A=\text{开动率},\; P=\text{性能效率},\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \]
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 \]
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.64 \]
+       
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.65 ^^Iext{OEE} = A \times
+                            P \times Q,\quad A=\text{开动率},\; P=\text{性能效率},\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \]
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.66 \]
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.66 \]
+       
+Things are pretty mixed up, but I think the worst is over.
+
+[20]) (./tex/49-summary.tex [21]
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\TU/TeXGyreTermes(0)/m/n/9 oprule \TU/NotoSerifCJKSC(0)/m/n/9 行
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\TU/NotoSerifCJKSC(0)/m/n/9 版 材 寿 命\TU/TeXGyreTermes(0)/m/n/9 /\TU/NotoSerif
+CJKSC(0)/m/n/9 网 点
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 32--32
+[]|\TU/NotoSerifCJKSC(0)/m/n/9 激 光 功 率 与 加 网 参 数 一 致
+ []
+
+[22] [23]
+
+LaTeX Font Warning: Font shape `TU/NotoSerifCJKSC(0)/m/it' undefined
+(Font)              using `TU/NotoSerifCJKSC(0)/m/n' instead on input line 81.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]|\TU/NotoSerifCJKSC(0)/m/n/9 仿 真 与 实 绩 节 拍 偏 差
+ []
+
+[24] [25]) (./tex/50-append.tex [26]) (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 094552561678585D9BB5EE962F85CEB2;1507.
+(rerunfilecheck)             Checksum: 254C400AD5DB88CF20292225CCC42B50;7691.
  ) 
 Here is how much of TeX's memory you used:
- 22858 strings out of 476443
- 483717 string characters out of 5793962
- 1945627 words of memory out of 5000000
- 44346 multiletter control sequences out of 15000+600000
- 575392 words of font info for 137 fonts, out of 8000000 for 9000
+ 35234 strings out of 476443
+ 765239 string characters out of 5793962
+ 1949627 words of memory out of 5000000
+ 56460 multiletter control sequences out of 15000+600000
+ 583750 words of font info for 194 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 99i,11n,100p,616b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,100p,1001b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (11 pages, 140068 bytes).
+Output written on main.xdv (30 pages, 431052 bytes).

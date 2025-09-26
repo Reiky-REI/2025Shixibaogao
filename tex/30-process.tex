@@ -4,13 +4,13 @@
 % 实训总体流程示意（第2部分要求：程序与步骤记录）
 \begin{figure}[H]
   \centering
-  % 统一箭头样式
-  	ikzset{>=Stealth}
+  % 统一箭头样式（此前漏写反斜杠导致显示为普通文字，这里修正）
+	ikzset{>=Stealth}
   % 时间线式概览（按 9/14--9/19 实际顺序）
   \begin{tikzpicture}[
     font=\scriptsize,
     node distance=18mm and 16mm,
-    day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=left, text width=4.15cm, inner sep=3.2pt, fill=gray!4},
+  day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=left, text width=3.95cm, inner sep=2.8pt, fill=gray!4},
     arrow/.style={->, thick},
     dashedarrow/.style={->, thick, dashed}
   ]
@@ -23,7 +23,7 @@
     \node[day, right=of d3] (d4) {\textbf{9/18}\newline 机器人编程进阶\newline 非标自动化线展示\newline 反思：示教缺力控\newline 风险点识别};
     \node[day, right=of d4] (d5) {\textbf{9/19}\newline 6S 深化（5S→6S）\newline 讨论：防形式主义\newline 标识适度化};
     % 总结节点置于下方居中偏右
-    \node[day, below=of d4, text width=4.4cm] (d6) {整理沉淀\newline 日志结构化\newline 问题清单梳理\newline 改进路线初稿};
+  \node[day, below=of d4, text width=4.4cm] (d6) {整理沉淀\newline 记录结构化\newline 问题清单梳理\newline 改进路线初稿};
 
     % 主顺序箭头
     \draw[arrow] (d0) -- (d1);
@@ -36,7 +36,7 @@
     \draw[dashedarrow] (d2) |- (d4);
     \draw[dashedarrow] (d2) |- (d3);
   \end{tikzpicture}
-  \caption{按实际日期重构的实训活动时间线（主箭头表示主序，虚线表示并发/交叉关注）}
+  % 不添加 caption，保持与“不要加图片说明”指令一致；需要说明时可在正文文字描述
 \end{figure}
 
 
@@ -269,6 +269,22 @@
 \end{figure}
 
 \subsection{湖北神誉机械制造有限公司}
+\subsubsection{机器人编程进阶（9/18 补充记录）}
+\begin{enumerate}[label=\arabic*.]
+  \item 复习关节/笛卡尔两种示教模式，强调“缓动—确认—记录”安全顺序；
+  \item 学习插补指令（直线/圆弧）与速度/加速度参数含义；
+  \item 观察末端 TCP 标定流程：使用治具触碰基准点 4 次求解；
+  \item 记录风险点：未设安全速度直接切换自动；空间示教未清空上次路径；力控未启用导致碰撞停止；
+  \item 讲解离线编程思路：CAD 导入 → 轨迹规划 → 仿真校验 → 下载执行。现场仅演示不实际下载。 
+\end{enumerate}
+\subsubsection{6S 深化与反形式主义讨论（9/19 补充记录）}
+\begin{enumerate}[label=\arabic*.]
+  \item 对比初训与复盘：现场标识补齐，但部分区域“贴标签为完成”无周期检查；
+  \item 讲解 5S→6S 补强点：安全指标（近失事件、异常停留时间）；
+  \item 讨论“适度标识”原则：频率低或单一物品不贴冗余牌，避免信息噪声；
+  \item 建议：建立周度巡检清单 + 责任人签字，拍照取代重复手写记录；
+  \item 个人体会：6S 落地关键在“可量化检查项”和“问题闭环周期”，否则易流于整理表面。 
+\end{enumerate}
 本节记录现场参观齿轮/齿轴类精密加工生产流程，列出当日观察到的主要工序与设备操作顺序（参数为现场讲解口述或铭牌观察，未做独立量化验证）。
 
 \subsubsection{参观流程顺序}
