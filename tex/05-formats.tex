@@ -1,83 +1,70 @@
-% ==========================
-% 标题与目录格式（修复损坏的宏定义，使用简化稳定版本）
-% ==========================
-% 目录样式：章使用“第X章”，节使用“一、”，小节“1.”，段落“(1)”
-	itlecontents{section}
-  [0em]
-  {\normalfont\normalsize}
-  {第\chinese{section}章\quad}
-  {}
-  {\titlerule*[0.5pc]{.}\contentspage}
+% Define custom counters
+\newcounter{sectiontoc}
+\newcounter{subsectiontoc}
+\newcounter{subsubsectiontoc}
+\newcounter{paragraphtoc}
 
-	itlecontents{subsection}
-  [2em]
-  {\normalfont\normalsize}
-  {\chinese{subsection}、\quad}
-  {}
-  {\titlerule*[0.5pc]{.}\contentspage}
+% appendix utils
+% Define a flag for appendix
+\newbool{inappendix}
+\setbool{inappendix}{false}
+% Redefine \appendix to set the flag
+\let\oldappendix\appendix
+\renewcommand{\appendix}{
+  \setbool{inappendix}{true}
+  \oldappendix
+}
 
-	itlecontents{subsubsection}
-  [3.5em]
-  {\normalfont\normalsize}
-  {\arabic{subsubsection}.\quad}
-  {}
-  {\titlerule*[0.5pc]{.}\contentspage}
+% title and toc customization
 
-	itlecontents{paragraph}
-  [5em]
-  {\normalfont\normalsize}
-  {(\arabic{paragraph})\quad}
-  {}
-  {\titlerule*[0.5pc]{.}\contentspage}
+% First level: 第\chinese{section}章
+% Second level: 一、
+% Third level: 1.
+% Fourth level: (1)
+% Increment counters in titlecontents with condition
+\titlecontents{section}[0pt]{\normalfont\normalsize}{
+  \ifnum\value{sectiontoc}>4 % Condition: skip numbering if sectiontoc is greater than 2
+    \stepcounter{sectiontoc} % Increment counter without displaying\
+    \hspace{1em} % Adjust spacing for unnumbered section
+  \else
+    \stepcounter{sectiontoc}\hspace{1em}第\chinese{sectiontoc}章\ 
+  \fi
+  \setcounter{subsectiontoc}{0}\
+  \setcounter{subsubsectiontoc}{0}\
+  \setcounter{paragraphtoc}{0}\
+}{\hspace{1.5em}}{\titlerule*[0.5pc]{.}\contentspage}
 
-% 标题格式
-% 章：小三、居中、显示“第X章”
-	itleformat{\section}
-  {\centering\normalfont\zihao{-3}}
-  {第\chinese{section}章}
-  {1em}{}
-	itlespacing{\section}{0pt}{1\baselineskip}{1\baselineskip}
+\titlecontents{subsection}[2em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{subsectiontoc}\chinese{subsectiontoc}、\
+  \setcounter{subsubsectiontoc}{0}\
+  \setcounter{paragraphtoc}{0}\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
 
-% 节：四号、顶头
-	itleformat{\subsection}
-  {\normalfont\zihao{4}}
-  {\chinese{subsection}、}
-  {1em}{}
-	itlespacing{\subsection}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+\titlecontents{subsubsection}[2.5em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{subsubsectiontoc}\arabic{subsubsectiontoc}.\
+  \setcounter{paragraphtoc}{0}\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
 
-% 小节：小四
-	itleformat{\subsubsection}
-  {\normalfont\zihao{-4}}
-  {\arabic{subsubsection}.}
-  {0.8em}{}
-	itlespacing{\subsubsection}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+\titlecontents{paragraph}[3em]{\normalfont\normalsize\sffamily}{
+  \stepcounter{paragraphtoc}(\arabic{paragraphtoc})\
+}{1em}{\titlerule*[0.5pc]{.}\contentspage}
 
-% 段落：小四，单独成行（不再 run-in，避免 titlesec 报错）
-	itleformat{\paragraph}
-  {\normalfont\zihao{-4}}
-  {(\arabic{paragraph})}
-  {0.8em}{}
-	itlespacing{\paragraph}{0pt}{0.6\baselineskip}{0.2\baselineskip}
-
-% 进入新的 subsubsection 时重置 paragraph 计数
-\makeatletter
-\@addtoreset{paragraph}{subsubsection}
-\makeatother
-    itleformat{\section}
-  {\centering\normalfont\zihao{-3}}
+% First level: 小三、黑体、居中、1.5倍行间距
+\titleformat{\section}
+  {\centering\normalfont\sffamily\zihao{-3}}
   {\ifbool{inappendix}{}{第\chinese{section}章\hspace{1em}}}
   {0pt}{}
 %\titlespacing{\section}{0pt}{*2}{*1.5}
 \titlespacing{\section}{0pt}{1\baselineskip}{1\baselineskip}
 % Second level: 四号、黑体、顶头、1.5倍行间距
-    itleformat{\subsection}{\normalfont\zihao{4}}{\chinese{subsection}、}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\zihao{4}}{\chinese{subsection}、}{1em}{}
 %\titlespacing{\subsection}{0pt}{*2}{*1.5}
 %\titlespacing{\subsection}{0pt}{1.5\baselineskip}{1.5\baselineskip}
 % Third and Fourth levels: 小四、宋体、1.5倍行距
-    itleformat{\subsubsection}{\normalfont\zihao{-4}}{\arabic{subsubsection}.}{1em}{}
+\titleformat{\subsubsection}{\normalfont\sffamily\zihao{-4}}{\arabic{subsubsection}.}{1em}{}
 %\titlespacing{\subsubsection}{0pt}{*2}{*1.5}
 %\titlespacing{\subsubsection}{0pt}{1.5\baselineskip}{1.5\baselineskip}
-    itleformat{\paragraph}[runin]{\normalfont\zihao{-4}}{(\arabic{paragraph})}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\sffamily\zihao{-4}}{(\arabic{paragraph})}{1em}{}
 %\titlespacing{\paragraph}{0pt}{*2}{*1.5}
 %\titlespacing{\paragraph}{0pt}{1.5\baselineskip}{1.5\baselineskip}
 % Set depth for numbering and TOC
@@ -114,8 +101,11 @@
 \AtBeginEnvironment{tabular}{\setcounter{myline}{0}}
 %\begin{tabular}{>{\stepcounter{myline}\themyline\quad\collectcell\hfillspace}p{.9\columnwidth}<{\endcollectcell}}
 %font
-% 字体已在 00-depends.tex 中统一设置（含自动检测与回退），此处不再重复，以避免未安装字体时报错。
-% 如需局部改变标题字体，可使用 \TitleCJKFont 命令包装。
+
+
+\setCJKmainfont{NotoSerifCJKsc-Regular} % 宋体
+\setCJKsansfont{NotoSansCJKsc-Regular} % 黑体
+\setmainfont{NotoSerifCJKsc-Regular}
 
 %\setCJKsansfont{NotoSansMNerdFont-Regular} % 设置黑体为无衬线字体
 %\setCJKmainfont{NotoSerifNerdFont-Regular} % 设置宋体为主字体
