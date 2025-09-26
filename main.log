@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.9.25)  25 SEP 2025 20:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.9.25)  26 SEP 2025 02:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,8 +1145,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 ^^Ii
-        tlecontents{section}
+l.5   i
+       tlecontents{section}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1168,8 +1168,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ^^Ii
-         tlecontents{subsection}
+l.12   i
+        tlecontents{subsection}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1191,8 +1191,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 ^^Ii
-         tlecontents{subsubsection}
+l.19   i
+        tlecontents{subsubsection}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1214,8 +1214,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 ^^Ii
-         tlecontents{paragraph}
+l.26   i
+        tlecontents{paragraph}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1237,16 +1237,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 ^^Ii
-         tleformat{\section}
+l.34   i
+        tleformat{\section}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.35 ^^Iitleformat{\section}
-                            
+l.34   itleformat{\section}
+                           
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1258,8 +1258,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.35 ^^Iitleformat{\section}
-                            
+l.34   itleformat{\section}
+                           
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1271,7 +1271,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37   {第
+l.36   {第
          \chinese{section}章}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1279,8 +1279,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.39 ^^Iitlespacing{\section}
-                             {0pt}{1\baselineskip}{1\baselineskip}
+l.38   itlespacing{\section}
+                            {0pt}{1\baselineskip}{1\baselineskip}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1292,8 +1292,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.39 ^^Iitlespacing{\section}
-                             {0pt}{1\baselineskip}{1\baselineskip}
+l.38   itlespacing{\section}
+                            {0pt}{1\baselineskip}{1\baselineskip}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1305,16 +1305,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 ^^Iitlespacing{\section}{0
-                               pt}{1\baselineskip}{1\baselineskip}
+l.38   itlespacing{\section}{0
+                              pt}{1\baselineskip}{1\baselineskip}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.39 ^^Iitlespacing{\section}{0pt}{1\baselineskip}
-                                                  {1\baselineskip}
+l.38   itlespacing{\section}{0pt}{1\baselineskip}
+                                                 {1\baselineskip}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1322,8 +1322,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.39 ^^Iitlespacing{\section}{0pt}{1\baselineskip}
-                                                  {1\baselineskip}
+l.38   itlespacing{\section}{0pt}{1\baselineskip}
+                                                 {1\baselineskip}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1334,7 +1334,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.39 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
+l.38 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1343,7 +1343,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.39 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
+l.38 ...tion}{0pt}{1\baselineskip}{1\baselineskip}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1359,16 +1359,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ^^Ii
-         tleformat{\subsection}
+l.40   i
+        tleformat{\subsection}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.42 ^^Iitleformat{\subsection}
-                               
+l.40   itleformat{\subsection}
+                              
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1380,8 +1380,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.42 ^^Iitleformat{\subsection}
-                               
+l.40   itleformat{\subsection}
+                              
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1393,7 +1393,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44   {\chinese{subsection}
+l.42   {\chinese{subsection}
                             、}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1401,8 +1401,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.46 ^^Iitlespacing{\subsection}
-                                {0pt}{0.8\baselineskip}{0.6\baselineskip}
+l.44   itlespacing{\subsection}
+                               {0pt}{0.8\baselineskip}{0.6\baselineskip}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1414,8 +1414,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.46 ^^Iitlespacing{\subsection}
-                                {0pt}{0.8\baselineskip}{0.6\baselineskip}
+l.44   itlespacing{\subsection}
+                               {0pt}{0.8\baselineskip}{0.6\baselineskip}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1427,15 +1427,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ^^Iitlespacing{\subsection}{0
-                                  pt}{0.8\baselineskip}{0.6\baselineskip}
+l.44   itlespacing{\subsection}{0
+                                 pt}{0.8\baselineskip}{0.6\baselineskip}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.46 ...pacing{\subsection}{0pt}{0.8\baselineskip}
+l.44 ...pacing{\subsection}{0pt}{0.8\baselineskip}
                                                   {0.6\baselineskip}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1444,7 +1444,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.46 ...pacing{\subsection}{0pt}{0.8\baselineskip}
+l.44 ...pacing{\subsection}{0pt}{0.8\baselineskip}
                                                   {0.6\baselineskip}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1456,7 +1456,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.46 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+l.44 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1465,7 +1465,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.46 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+l.44 ...}{0pt}{0.8\baselineskip}{0.6\baselineskip}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1481,16 +1481,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 ^^Ii
-         tleformat{\subsubsection}
+l.46   i
+        tleformat{\subsubsection}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.49 ^^Iitleformat{\subsubsection}
-                                  
+l.46   itleformat{\subsubsection}
+                                 
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1502,8 +1502,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.49 ^^Iitleformat{\subsubsection}
-                                  
+l.46   itleformat{\subsubsection}
+                                 
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1515,7 +1515,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51   {\arabic{subsubsection}
+l.48   {\arabic{subsubsection}
                               .}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1523,8 +1523,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.53 ^^Iitlespacing{\subsubsection}
-                                   {0pt}{0.7\baselineskip}{0.4\baselineskip}
+l.50   itlespacing{\subsubsection}
+                                  {0pt}{0.7\baselineskip}{0.4\baselineskip}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1536,8 +1536,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.53 ^^Iitlespacing{\subsubsection}
-                                   {0pt}{0.7\baselineskip}{0.4\baselineskip}
+l.50   itlespacing{\subsubsection}
+                                  {0pt}{0.7\baselineskip}{0.4\baselineskip}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1549,15 +1549,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 ^^Iitlespacing{\subsubsection}{0
-                                     pt}{0.7\baselineskip}{0.4\baselineskip}
+l.50   itlespacing{\subsubsection}{0
+                                    pt}{0.7\baselineskip}{0.4\baselineskip}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.53 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
+l.50 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
                                                   {0.4\baselineskip}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1566,7 +1566,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.53 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
+l.50 ...ing{\subsubsection}{0pt}{0.7\baselineskip}
                                                   {0.4\baselineskip}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1578,7 +1578,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.53 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+l.50 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1587,7 +1587,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.53 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+l.50 ...}{0pt}{0.7\baselineskip}{0.4\baselineskip}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1603,16 +1603,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 ^^Ii
-         tleformat{\paragraph}
+l.52   i
+        tleformat{\paragraph}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.56 ^^Iitleformat{\paragraph}
-                              
+l.52   itleformat{\paragraph}
+                             
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1624,8 +1624,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.56 ^^Iitleformat{\paragraph}
-                              
+l.52   itleformat{\paragraph}
+                             
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1637,7 +1637,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58   {(
+l.54   {(
          \arabic{paragraph})}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1645,8 +1645,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@xdblarg has an extra }.
 <inserted text> 
                 \par 
-l.60 ^^Iitlespacing{\paragraph}
-                               {0pt}{0.6\baselineskip}{0.2\baselineskip}
+l.56   itlespacing{\paragraph}
+                              {0pt}{0.6\baselineskip}{0.2\baselineskip}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -1658,8 +1658,8 @@ Runaway argument?
 ! Paragraph ended before \@xdblarg was complete.
 <to be read again> 
                    \par 
-l.60 ^^Iitlespacing{\paragraph}
-                               {0pt}{0.6\baselineskip}{0.2\baselineskip}
+l.56   itlespacing{\paragraph}
+                              {0pt}{0.6\baselineskip}{0.2\baselineskip}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -1671,15 +1671,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 ^^Iitlespacing{\paragraph}{0
-                                 pt}{0.6\baselineskip}{0.2\baselineskip}
+l.56   itlespacing{\paragraph}{0
+                                pt}{0.6\baselineskip}{0.2\baselineskip}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.60 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
+l.56 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
                                                   {0.2\baselineskip}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1688,7 +1688,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.60 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
+l.56 ...spacing{\paragraph}{0pt}{0.6\baselineskip}
                                                   {0.2\baselineskip}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1700,7 +1700,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.60 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+l.56 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1709,7 +1709,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.60 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+l.56 ...}{0pt}{0.6\baselineskip}{0.2\baselineskip}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1717,168 +1717,6 @@ I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66     i
-          tleformat{\section}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Argument of \@xdblarg has an extra }.
-<inserted text> 
-                \par 
-l.66     itleformat{\section}
-                             
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@xdblarg was complete.
-<to be read again> 
-                   \par 
-l.66     itleformat{\section}
-                             
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package etoolbox Error: Boolean '\ifinappendix' undefined.
-
-See the etoolbox package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68   {\ifbool{inappendix}
-                           {}{第\chinese{section}章\hspace{1em}}}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69   {0
-         pt}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Argument of \@xdblarg has an extra }.
-<inserted text> 
-                \par 
-l.73     itleformat{\subsection}
-                                {\normalfont\zihao{4}}{\chinese{subsection}、...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@xdblarg was complete.
-<to be read again> 
-                   \par 
-l.73     itleformat{\subsection}
-                                {\normalfont\zihao{4}}{\chinese{subsection}、...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...\normalfont\zihao{4}}{\chinese{subsection}
-                                                  、}{1em}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Argument of \@xdblarg has an extra }.
-<inserted text> 
-                \par 
-l.77     itleformat{\subsubsection}
-                                   {\normalfont\zihao{-4}}{\arabic{subsubsec...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@xdblarg was complete.
-<to be read again> 
-                   \par 
-l.77     itleformat{\subsubsection}
-                                   {\normalfont\zihao{-4}}{\arabic{subsubsec...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 ...rmalfont\zihao{-4}}{\arabic{subsubsection}
-                                                  .}{1em}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Argument of \@xdblarg has an extra }.
-<inserted text> 
-                \par 
-l.80     itleformat{\paragraph}
-                               [runin]{\normalfont\zihao{-4}}{(\arabic{parag...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@xdblarg was complete.
-<to be read again> 
-                   \par 
-l.80     itleformat{\paragraph}
-                               [runin]{\normalfont\zihao{-4}}{(\arabic{parag...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.80     itleformat{\paragraph}[
-                                runin]{\normalfont\zihao{-4}}{(\arabic{parag...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 \c@myline=\count377
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -2038,8 +1876,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 File: ./assets/tjut_logo.jpg Graphic file (type bmp)
 <./assets/tjut_logo.jpg>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 7.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2047,7 +1885,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2059,7 +1897,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -2072,27 +1910,32 @@ LaTeX Warning: No \author given.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2]) (./tex/20-abstrcat.tex [1] [2]) (./tex/30-process.tex [3] [4] [5] [6]
+ [2]) (./tex/20-abstrcat.tex [3]) (./tex/30-process.tex
+[4] [5] [6] [7]
 File: pic/_DSF6259中.jpeg Graphic file (type bmp)
 <pic/_DSF6259中.jpeg>
 File: pic/_DSF6267中.jpeg Graphic file (type bmp)
 <pic/_DSF6267中.jpeg>
- [7] [8]
+ [8]
 File: pic/_DSF6304中.jpeg Graphic file (type bmp)
 <pic/_DSF6304中.jpeg>
 File: pic/_DSF6338中.jpeg Graphic file (type bmp)
 <pic/_DSF6338中.jpeg>
- [9]
+ [9] [10]
 File: pic/_DSF6367中.jpeg Graphic file (type bmp)
 <pic/_DSF6367中.jpeg>
 File: pic/_DSF6406中.jpeg Graphic file (type bmp)
 <pic/_DSF6406中.jpeg>
- [10] [11]
+ [11]
 File: pic/_DSF6413中.jpeg Graphic file (type bmp)
 <pic/_DSF6413中.jpeg>
 File: pic/_DSF6465中.jpeg Graphic file (type bmp)
 <pic/_DSF6465中.jpeg>
- [12]
+ [12] [13]
+File: pic/_DSF6467中.jpeg Graphic file (type bmp)
+<pic/_DSF6467中.jpeg>
+File: pic/_DSF6565中.jpeg Graphic file (type bmp)
+<pic/_DSF6565中.jpeg>
 File: pic/_DSF6275中.jpeg Graphic file (type bmp)
 <pic/_DSF6275中.jpeg>
 File: pic/_DSF6285中.jpeg Graphic file (type bmp)
@@ -2149,87 +1992,8 @@ File: pic/_DSF6552中.jpeg Graphic file (type bmp)
 <pic/_DSF6552中.jpeg>
 File: pic/_DSF6562中.jpeg Graphic file (type bmp)
 <pic/_DSF6562中.jpeg>
-) (./tex/40-analyze.tex [13]
-[14] [15] [16] [17] [18] [19]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.63 ^^Iext{OEE} = A \times
-                            P \times Q,\quad A=\text{开动率},\; P=\text{性能效率},\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 \]
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.64 \]
-       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.64 \]
-       
-Things are pretty mixed up, but I think the worst is over.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.65 ^^Iext{OEE} = A \times
-                            P \times Q,\quad A=\text{开动率},\; P=\text{性能效率},\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 \]
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.66 \]
-       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.66 \]
-       
-Things are pretty mixed up, but I think the worst is over.
-
-[20]) (./tex/49-summary.tex [21]
+) (./tex/40-analyze.tex [14]
+[15] [16] [17] [18] [19] [20]) (./tex/49-summary.tex [21]
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
 []|\TU/TeXGyreTermes(0)/m/n/9 oprule \TU/NotoSerifCJKSC(0)/m/n/9 行
  []
@@ -2255,7 +2019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 []|\TU/NotoSerifCJKSC(0)/m/n/9 仿 真 与 实 绩 节 拍 偏 差
  []
 
-[24] [25]) (./tex/50-append.tex [26]) (./main.aux)
+[24]) (./tex/50-append.tex [25]) (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -2264,19 +2028,16 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 254C400AD5DB88CF20292225CCC42B50;7691.
  ) 
 Here is how much of TeX's memory you used:
- 35234 strings out of 476443
- 765239 string characters out of 5793962
- 1949627 words of memory out of 5000000
- 56460 multiletter control sequences out of 15000+600000
+ 35253 strings out of 476443
+ 765678 string characters out of 5793962
+ 1951627 words of memory out of 5000000
+ 56477 multiletter control sequences out of 15000+600000
  583750 words of font info for 194 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  99i,12n,100p,1001b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (30 pages, 431052 bytes).
+Output written on main.xdv (27 pages, 434796 bytes).
