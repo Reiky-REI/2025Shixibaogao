@@ -333,9 +333,6 @@ INPUT ./titletoc.sty
 INPUT titletoc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/collcell/collcell.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/collcell/collcell.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
