@@ -61,12 +61,12 @@
 \usepackage{microtype}
 \microtypesetup{protrusion=true,expansion=false}
 
-% 字体设置：安装了 Noto CJK 后，显式指定，避免某些查看器不渲染嵌入。
+% 字体设置：使用默认的Fandol字体设置，暂时不指定SimSun
 % 西文 Times New Roman 不一定存在，继续回退 TeX Gyre Termes。
 \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
-% 中文主字体使用 Noto Serif CJK SC（思源宋体衍生包别名）；无衬线用 Noto Sans CJK SC。
-\IfFontExistsTF{Noto Serif CJK SC}{\setCJKmainfont{Noto Serif CJK SC}}{\setCJKmainfont{FandolSong-Regular}}
-\IfFontExistsTF{Noto Sans CJK SC}{\setCJKsansfont{Noto Sans CJK SC}}{\setCJKsansfont{FandolHei-Regular}}
+% 使用默认中文字体配置，注释掉可能有问题的字体设置
+%\IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{\IfFontExistsTF{Noto Serif CJK SC}{\setCJKmainfont{Noto Serif CJK SC}}{\setCJKmainfont{FandolSong}}}
+%\IfFontExistsTF{Noto Sans CJK SC}{\setCJKsansfont{Noto Sans CJK SC}}{\setCJKsansfont{FandolHei}}
 % 代码等宽若需要中文亦可：\IfFontExistsTF{Noto Sans Mono CJK SC}{\setCJKmonofont{Noto Sans Mono CJK SC}}{}
 
 \newcommand{\TitleCJKFont}[1]{#1}
