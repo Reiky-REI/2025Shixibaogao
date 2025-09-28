@@ -1,49 +1,55 @@
 \contentsline {section}{\numberline {1}实训单位简介}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}实训单位清单}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}实训单位介绍}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}实训主要内容及过程}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}襄阳东发实习服务有限公司}{6}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}实训预备}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}实训内容}{6}{subsubsection.2.1.2}%
-\contentsline {paragraph}{\numberline {2.1.2.1}进厂规范}{6}{paragraph.2.1.2.1}%
-\contentsline {paragraph}{\numberline {2.1.2.2}住宿行为规范}{7}{paragraph.2.1.2.2}%
+\contentsline {section}{\numberline {2}实训主要内容及过程}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}襄阳东发实习服务有限公司}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}实训预备}{5}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}实训内容}{5}{subsubsection.2.1.2}%
+\contentsline {paragraph}{\numberline {2.1.2.1}进厂规范}{5}{paragraph.2.1.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2}住宿行为规范}{6}{paragraph.2.1.2.2}%
 \contentsline {subsection}{\numberline {2.2}东风日产风神襄阳汽车有限公司}{8}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}入厂准备}{8}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}参观内容}{9}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}中印南方印刷有限公司}{9}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}CTP 制版现场记录}{10}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}双色报纸机（BB 机）现场记录}{10}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}四色机组（彩色印刷）现场记录}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.2.2}参观内容}{8}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}中印南方印刷有限公司}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}CTP 制版现场记录}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}双色报纸机（BB 机）现场记录}{9}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}四色机组（彩色印刷）现场记录}{9}{subsubsection.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.4}TKS 八色轮转机现场记录}{10}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}现场记录小结}{11}{subsubsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.4}骆驼集团新能源电池有限公司}{11}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}现场记录小结}{10}{subsubsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.4}骆驼集团新能源电池有限公司}{10}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}参观总体顺序}{11}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}极片生产线现场记录}{11}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}电芯装配现场记录}{12}{subsubsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.4}化成与分容现场记录}{12}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.3}电芯装配现场记录}{11}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}化成与分容现场记录}{11}{subsubsection.2.4.4}%
 \contentsline {subsubsection}{\numberline {2.4.5}产品与回收展示记录}{12}{subsubsection.2.4.5}%
 \contentsline {subsubsection}{\numberline {2.4.6}现场记录小结}{12}{subsubsection.2.4.6}%
-\contentsline {subsection}{\numberline {2.5}湖北神誉机械制造有限公司}{13}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}机器人编程进阶（9/18 补充记录）}{13}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}6S 深化与反形式主义讨论（9/19 补充记录）}{13}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}参观流程顺序}{14}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}现场设备与记录}{14}{subsubsection.2.5.4}%
-\contentsline {paragraph}{\numberline {2.5.4.1}五轴数控高速滚齿机}{14}{paragraph.2.5.4.1}%
-\contentsline {paragraph}{\numberline {2.5.4.2}CZL-16N 立式双伺服数控搓齿机}{14}{paragraph.2.5.4.2}%
-\contentsline {paragraph}{\numberline {2.5.4.3}卧式七轴数控滚齿机}{14}{paragraph.2.5.4.3}%
-\contentsline {paragraph}{\numberline {2.5.4.4}热处理与磨削}{14}{paragraph.2.5.4.4}%
-\contentsline {paragraph}{\numberline {2.5.4.5}检测环节}{14}{paragraph.2.5.4.5}%
-\contentsline {subsubsection}{\numberline {2.5.5}观察要点汇总}{14}{subsubsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.6}襄阳中基创展智能科技有限公司}{14}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}参观流程顺序}{15}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}现场设备与记录}{15}{subsubsection.2.6.2}%
-\contentsline {paragraph}{\numberline {2.6.2.1}高速自动冲床（冲坑/冲孔工序）}{15}{paragraph.2.6.2.1}%
-\contentsline {paragraph}{\numberline {2.6.2.2}在线视觉检测}{15}{paragraph.2.6.2.2}%
-\contentsline {paragraph}{\numberline {2.6.2.3}自动装配/夹装单元}{15}{paragraph.2.6.2.3}%
-\contentsline {paragraph}{\numberline {2.6.2.4}化成分容整线}{15}{paragraph.2.6.2.4}%
-\contentsline {paragraph}{\numberline {2.6.2.5}自动包装线}{15}{paragraph.2.6.2.5}%
-\contentsline {subsubsection}{\numberline {2.6.3}观察要点汇总}{15}{subsubsection.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.4}现场记录小结}{16}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.5}襄阳光瑞汽车零部件有限公司}{12}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}电泳涂装工艺}{12}{subsubsection.2.5.1}%
+\contentsline {paragraph}{\numberline {2.5.1.1}产线概况}{12}{paragraph.2.5.1.1}%
+\contentsline {paragraph}{\numberline {2.5.1.2}关键工序与药剂}{13}{paragraph.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.2}气动与液压应用}{13}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}多模具与焊接工艺}{14}{subsubsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.6}湖北神誉机械制造有限公司}{14}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}机器人编程进阶（9/18 补充记录）}{14}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}6S 深化学习（9/19 补充记录）}{15}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}参观流程顺序}{15}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}现场设备与记录}{15}{subsubsection.2.6.4}%
+\contentsline {paragraph}{\numberline {2.6.4.1}五轴数控高速滚齿机}{15}{paragraph.2.6.4.1}%
+\contentsline {paragraph}{\numberline {2.6.4.2}CZL-16N 立式双伺服数控搓齿机}{15}{paragraph.2.6.4.2}%
+\contentsline {paragraph}{\numberline {2.6.4.3}卧式七轴数控滚齿机}{15}{paragraph.2.6.4.3}%
+\contentsline {paragraph}{\numberline {2.6.4.4}热处理与磨削}{15}{paragraph.2.6.4.4}%
+\contentsline {paragraph}{\numberline {2.6.4.5}检测环节}{15}{paragraph.2.6.4.5}%
+\contentsline {subsubsection}{\numberline {2.6.5}观察要点汇总}{16}{subsubsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.7}襄阳中基创展智能科技有限公司}{16}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}参观流程顺序}{16}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}现场设备与记录}{16}{subsubsection.2.7.2}%
+\contentsline {paragraph}{\numberline {2.7.2.1}高速自动冲床（冲坑/冲孔工序）}{16}{paragraph.2.7.2.1}%
+\contentsline {paragraph}{\numberline {2.7.2.2}在线视觉检测}{16}{paragraph.2.7.2.2}%
+\contentsline {paragraph}{\numberline {2.7.2.3}自动装配/夹装单元}{17}{paragraph.2.7.2.3}%
+\contentsline {paragraph}{\numberline {2.7.2.4}化成分容整线}{17}{paragraph.2.7.2.4}%
+\contentsline {paragraph}{\numberline {2.7.2.5}自动包装线}{17}{paragraph.2.7.2.5}%
+\contentsline {subsubsection}{\numberline {2.7.3}观察要点汇总}{17}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}现场记录小结}{17}{subsubsection.2.7.4}%
 \contentsline {section}{\numberline {3}实训典型设备或生产线重点分析}{18}{section.3}%
 \contentsline {subsection}{\numberline {3.1}中印南方印刷有限公司典型设备分析}{18}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}CTP 制版系统}{18}{subsubsection.3.1.1}%
