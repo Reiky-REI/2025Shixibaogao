@@ -1,0 +1,134 @@
+% ==========================
+% 标题与目录与排版格式（最终清洁版本）
+% ==========================
+
+% 目录样式：章“第X章”，节“X、”，小节“1.”，段落“(1)”
+\ExplSyntaxOn
+\csname tl_new:N\endcsname \l__toc_label_tl
+\seq_new:N \l__toc_label_seq
+\cs_new_protected:Npn \__toc_prepare_label: {
+  \csname tl_set:Nx\endcsname \l__toc_label_tl { \thecontentslabel }
+  \csname tl_if_blank:VTF\endcsname \l__toc_label_tl
+    { \seq_clear:N \l__toc_label_seq }
+    {
+      \seq_set_split:NnV \l__toc_label_seq {.} \l__toc_label_tl
+      \iow_term:x { label~=~\tl_use:N \l__toc_label_tl }
+      \seq_map_inline:Nn \l__toc_label_seq { \iow_term:x { ~component~=~##1 } }
+    }
+}
+\cs_new:Npn \__toc_component_or_label:n #1 {
+  \int_compare:nNnTF {#1} > {\seq_count:N \l__toc_label_seq}
+    {
+      \iow_term:n { fallback~label }
+      \l__toc_label_tl
+    }
+    {
+      \seq_item:Nn \l__toc_label_seq { #1 }
+    }
+}
+\cs_new_protected:Npn \__toc_if_label:nnn #1#2#3 {
+  \csname tl_if_blank:VTF\endcsname \l__toc_label_tl { #3 } { #1#2 }
+}
+\cs_new_protected:Npn \__toc_section_entry:n #1 {
+  	ypeout{section label raw = \meaning\thecontentslabel}
+  \__toc_prepare_label:
+  \__toc_if_label:nnn
+    { 第\zhnumber{\__toc_component_or_label:n { 1 }}章\quad }
+    { #1 }
+    { #1 }
+}
+\cs_new_protected:Npn \__toc_subsection_entry:n #1 {
+  	ypeout{subsection label raw = \meaning\thecontentslabel}
+  \__toc_prepare_label:
+  \__toc_if_label:nnn
+    { \zhnumber{\__toc_component_or_label:n { 2 }}、\quad }
+    { #1 }
+    { #1 }
+}
+\cs_new_protected:Npn \__toc_subsubsection_entry:n #1 {
+  	ypeout{subsubsection label raw = \meaning\thecontentslabel}
+  \__toc_prepare_label:
+  \__toc_if_label:nnn
+    { \__toc_component_or_label:n { 3 }.\quad }
+    { #1 }
+    { #1 }
+}
+\cs_new_protected:Npn \__toc_paragraph_entry:n #1 {
+  	ypeout{paragraph label raw = \meaning\thecontentslabel}
+  \__toc_prepare_label:
+  \__toc_if_label:nnn
+    { (\__toc_component_or_label:n { 4 })\quad }
+    { #1 }
+    { #1 }
+}
+\ExplSyntaxOff
+\DeclareRobustCommand{\tocSectionEntry}[1]{\__toc_section_entry:n {#1}}
+\DeclareRobustCommand{\tocSectionEntryNoLabel}[1]{#1}
+\DeclareRobustCommand{\tocSubsectionEntry}[1]{\__toc_subsection_entry:n {#1}}
+\DeclareRobustCommand{\tocSubsectionEntryNoLabel}[1]{#1}
+\DeclareRobustCommand{\tocSubsubsectionEntry}[1]{\__toc_subsubsection_entry:n {#1}}
+\DeclareRobustCommand{\tocSubsubsectionEntryNoLabel}[1]{#1}
+\DeclareRobustCommand{\tocParagraphEntry}[1]{\__toc_paragraph_entry:n {#1}}
+\DeclareRobustCommand{\tocParagraphEntryNoLabel}[1]{#1}
+
+\csname titlecontents\endcsname{section}[0em]{\normalfont\normalsize}{\tocSectionEntry}{\tocSectionEntryNoLabel}{\titlerule*[0.5pc]{.}\contentspage}
+\csname titlecontents\endcsname{subsection}[2em]{\normalfont\normalsize}{\tocSubsectionEntry}{\tocSubsectionEntryNoLabel}{\titlerule*[0.5pc]{.}\contentspage}
+\csname titlecontents\endcsname{subsubsection}[3.5em]{\normalfont\normalsize}{\tocSubsubsectionEntry}{\tocSubsubsectionEntryNoLabel}{\titlerule*[0.5pc]{.}\contentspage}
+\csname titlecontents\endcsname{paragraph}[5em]{\normalfont\normalsize}{\tocParagraphEntry}{\tocParagraphEntryNoLabel}{\titlerule*[0.5pc]{.}\contentspage}
+
+% 标题格式
+\titleformat{\section}{\centering\normalfont\zihao{-3}}{第\chinese{section}章}{1em}{}
+\titlespacing{\section}{0pt}{1\baselineskip}{1\baselineskip}
+\titleformat{\subsection}{\normalfont\zihao{4}}{\chinese{subsection}、}{1em}{}
+\titlespacing{\subsection}{0pt}{0.8\baselineskip}{0.6\baselineskip}
+\titleformat{\subsubsection}{\normalfont\zihao{-4}}{\arabic{subsubsection}.}{0.8em}{}
+\titlespacing{\subsubsection}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+\titleformat{\paragraph}{\normalfont\zihao{-4}}{(\arabic{paragraph})}{0.8em}{}
+\titlespacing{\paragraph}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+
+% 进入新的 subsubsection 时重置 paragraph 计数
+\makeatletter
+\@addtoreset{paragraph}{subsubsection}
+\makeatother
+
+% 编号与目录深度
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+% 表格与段落基础格式
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{2em}
+
+% 目录标题（居中：目 录）
+\renewcommand{\contentsname}{ \centering{目\hspace{1em}录}}
+
+% 自定义辅助命令
+\ExplSyntaxOn
+\NewDocumentCommand {\hfillspace}{ > { \SplitList { ~ } } m }{ \tl_map_inline:nn {#1} { ##1\hfill } }
+\ExplSyntaxOff
+\newcounter{myline}
+\AtBeginEnvironment{tabular}{\setcounter{myline}{0}}
+
+% 下划线固定宽度命令
+\newcommand{\fixedunderline}[2][6cm]{\underline{\makebox[#1][c]{#2}}}
+
+% 代码高亮设置
+\lstset{
+  language=Matlab,
+  basicstyle=\ttfamily,
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=single,
+  tabsize=2,
+  breaklines=true,
+  breakatwhitespace=true,
+  captionpos=b,
+  keepspaces=true,
+  columns=flexible,
+}
+

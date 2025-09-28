@@ -30,6 +30,7 @@
 
 % Tables and Arrays
 \usepackage{array} % Enhanced table features
+\usepackage{tabularx} % 自动列宽表格，便于避免 Overfull
 
 % (报告不需要参考文献，移除 cite / gbt7714)
 
@@ -56,6 +57,9 @@
 \usepackage{mathrsfs} % 手写体支持
 \usepackage{booktabs} % 专业表格
 \usepackage{setspace} %spacing
+% 微排版优化（仅启用 protrusion；XeLaTeX 对 expansion 支持有限，会报错）
+\usepackage{microtype}
+\microtypesetup{protrusion=true,expansion=false}
 
 % 字体设置：安装了 Noto CJK 后，显式指定，避免某些查看器不渲染嵌入。
 % 西文 Times New Roman 不一定存在，继续回退 TeX Gyre Termes。
@@ -66,13 +70,12 @@
 % 代码等宽若需要中文亦可：\IfFontExistsTF{Noto Sans Mono CJK SC}{\setCJKmonofont{Noto Sans Mono CJK SC}}{}
 
 \newcommand{\TitleCJKFont}[1]{#1}
-
 % 页眉页脚：居中显示标题，页脚页码
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{14pt}
 \fancyhead[C]{\zihao{5} 天津理工大学《生产实习》报告}
-\fancyfoot[C]{\zihao{6} \thepage}
+\fancyfoot[C]{\zihao{5} \thepage}
 
 % 统一行距
 \onehalfspacing

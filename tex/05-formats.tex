@@ -101,8 +101,11 @@
 \AtBeginEnvironment{tabular}{\setcounter{myline}{0}}
 %\begin{tabular}{>{\stepcounter{myline}\themyline\quad\collectcell\hfillspace}p{.9\columnwidth}<{\endcollectcell}}
 %font
-% 字体已在 00-depends.tex 中统一设置（含自动检测与回退），此处不再重复，以避免未安装字体时报错。
-% 如需局部改变标题字体，可使用 \TitleCJKFont 命令包装。
+
+
+\setCJKmainfont{NotoSerifCJKsc-Regular} % 宋体
+\setCJKsansfont{NotoSansCJKsc-Regular} % 黑体
+\setmainfont{NotoSerifCJKsc-Regular}
 
 %\setCJKsansfont{NotoSansMNerdFont-Regular} % 设置黑体为无衬线字体
 %\setCJKmainfont{NotoSerifNerdFont-Regular} % 设置宋体为主字体

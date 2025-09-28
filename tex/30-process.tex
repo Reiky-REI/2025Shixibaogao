@@ -2,42 +2,74 @@
 \section{实训主要内容及过程}
 
 % 实训总体流程示意（第2部分要求：程序与步骤记录）
+% \begin{figure}[H]
+%   \centering
+%   % 统一箭头样式（此前漏写反斜杠导致显示为普通文字，这里修正）
+%   \tikzset{>=Stealth}
+%   % 时间线式概览（按 9/14--9/19 实际顺序）
+%   \begin{tikzpicture}[
+%     font=\scriptsize,
+%     node distance=18mm and 16mm,
+%   day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=left, text width=3.95cm, inner sep=2.8pt, fill=gray!4},
+%     arrow/.style={->, thick},
+%     dashedarrow/.style={->, thick, dashed}
+%   ]
+%     % 第一行（主时间轴上半）
+%     \node[day] (d0) {\textbf{9/14}\newline 入厂安全教育\newline 工艺/机器人讲座\newline 初次示教操作\newline 6S 初训};
+%     \node[day, right=of d0] (d1) {\textbf{9/15}\newline 东风日产总装线\newline (VCR→电气→内饰→玻璃→测试)\newline 观察：AGV 无磁条导航\newline 协同：人工+自动};
+%     \node[day, right=of d1] (d2) {\textbf{9/16}\newline 印刷：制版/多色\newline 骆驼：极片→化成/回收\newline 关注：张力/色序 与\newline 化成曲线};
+%     % 第二行（下半）
+%     \node[day, below=of d0] (d3) {\textbf{9/17}\newline 精密加工参观\newline (滚齿/搓齿/热处理/磨削)\newline 关注：高能量工序安全\newline 刀具寿命};
+%     \node[day, right=of d3] (d4) {\textbf{9/18}\newline 机器人编程进阶\newline 非标自动化线展示\newline 反思：示教缺力控\newline 风险点识别};
+%     \node[day, right=of d4] (d5) {\textbf{9/19}\newline 6S 深化（5S→6S）\newline 讨论：防形式主义\newline 标识适度化};
+%     % 总结节点置于下方居中偏右
+%     \node[day, below=of d4, text width=4.4cm] (d6) {整理沉淀\newline 记录结构化\newline 问题清单梳理\newline 改进路线初稿};
+
+%     % 主顺序箭头
+%     \draw[arrow] (d0) -- (d1);
+%     \draw[arrow] (d1) -- (d2);
+%     \draw[arrow] (d0) -- (d3);
+%     \draw[arrow] (d3) -- (d4);
+%     \draw[arrow] (d4) -- (d5);
+%     \draw[arrow] (d5) |- (d6);
+%     % 跨域并发/交叉补充关系
+%     \draw[dashedarrow] (d2) |- (d4);
+%     \draw[dashedarrow] (d2) |- (d3);
+%   \end{tikzpicture}
+%   % 不添加 caption，保持与“不要加图片说明”指令一致；需要说明时可在正文文字描述
+% \end{figure}
 \begin{figure}[H]
   \centering
-  % 统一箭头样式
-  	ikzset{>=Stealth}
-  % 时间线式概览（按 9/14--9/19 实际顺序）
+  \tikzset{>=Stealth}
   \begin{tikzpicture}[
     font=\scriptsize,
-    node distance=18mm and 16mm,
-    day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=left, text width=4.15cm, inner sep=3.2pt, fill=gray!4},
-    arrow/.style={->, thick},
-    dashedarrow/.style={->, thick, dashed}
+    node distance=10mm,
+    day/.style={rectangle, rounded corners=2pt, draw=black, very thick, align=center, text width=7.2cm, inner sep=2.8pt, fill=gray!4},
+    arrow/.style={->, thick}
   ]
-    % 第一行（主时间轴上半）
-    \node[day] (d0) {\textbf{9/14}\newline 入厂安全教育\newline 工艺/机器人讲座\newline 初次示教操作\newline 6S 初训};
-    \node[day, right=of d0] (d1) {\textbf{9/15}\newline 东风日产总装线\newline (VCR→电气→内饰→玻璃→测试)\newline 观察：AGV 无磁条导航\newline 协同：人工+自动};
-    \node[day, right=of d1] (d2) {\textbf{9/16}\newline 印刷：制版/多色\newline 骆驼：极片→化成/回收\newline 关注：张力/色序 与\newline 化成曲线};
-    % 第二行（下半）
-    \node[day, below=of d0] (d3) {\textbf{9/17}\newline 精密加工参观\newline (滚齿/搓齿/热处理/磨削)\newline 关注：高能量工序安全\newline 刀具寿命};
-    \node[day, right=of d3] (d4) {\textbf{9/18}\newline 机器人编程进阶\newline 非标自动化线展示\newline 反思：示教缺力控\newline 风险点识别};
-    \node[day, right=of d4] (d5) {\textbf{9/19}\newline 6S 深化（5S→6S）\newline 讨论：防形式主义\newline 标识适度化};
-    % 总结节点置于下方居中偏右
-    \node[day, below=of d4, text width=4.4cm] (d6) {整理沉淀\newline 日志结构化\newline 问题清单梳理\newline 改进路线初稿};
+    % 竖向时间线：自上而下按日期顺序
+    \node[day] (d0) {\textbf{9/14}\\ 入厂安全教育\\ 工艺/机器人讲座\\ 初次示教操作\\ 6S 初训};
+    \node[day, below=7mm of d0] (d1) {\textbf{9/15}\\ 东风日产总装线\\ (VCR→电气→内饰→玻璃→测试)\\ 观察：AGV 无磁条导航\\ 协同：人工+自动};
+    \node[day, below=7mm of d1] (d2) {\textbf{9/16}\\ 印刷：制版/多色\\ 骆驼：极片→化成/回收\\ 关注：张力/色序 与\\ 化成曲线};
+    \node[day, below=7mm of d2] (d3) {\textbf{9/17}\\ 精密加工参观\\ (滚齿/搓齿/热处理/磨削)\\ 关注：高能量工序安全\\ 刀具寿命};
+    \node[day, below=7mm of d3] (d4) {\textbf{9/18}\\ 机器人编程进阶\\ 非标自动化线展示\\ 反思：示教缺力控\\ 风险点识别};
+    \node[day, below=7mm of d4] (d5) {\textbf{9/19}\\ 6S 深化（5S→6S）\\ 讨论：优秀的生产管理\\ 标识适度化};
 
-    % 主顺序箭头
-    \draw[arrow] (d0) -- (d1);
-    \draw[arrow] (d1) -- (d2);
-    \draw[arrow] (d0) -- (d3);
-    \draw[arrow] (d3) -- (d4);
-    \draw[arrow] (d4) -- (d5);
-    \draw[arrow] (d5) |- (d6);
-    % 跨域并发/交叉补充关系
-    \draw[dashedarrow] (d2) |- (d4);
-    \draw[dashedarrow] (d2) |- (d3);
+    % 总结节点（置于最下方，略加宽）
+    \node[day, below=9mm of d5, text width=7.6cm] (d6) {整理沉淀\\ 记录结构化\\ 问题清单梳理\\ 改进路线初稿};
+
+    % 主顺序箭头（竖向）
+    \draw[arrow] (d0.south) -- (d1.north);
+    \draw[arrow] (d1.south) -- (d2.north);
+    \draw[arrow] (d2.south) -- (d3.north);
+    \draw[arrow] (d3.south) -- (d4.north);
+    \draw[arrow] (d4.south) -- (d5.north);
+    \draw[arrow] (d5.south) -- (d6.north);
+
+    %（按要求移除虚线跨域关系）
   \end{tikzpicture}
-  \caption{按实际日期重构的实训活动时间线（主箭头表示主序，虚线表示并发/交叉关注）}
 \end{figure}
+
 
 
 \subsection{襄阳东发实习服务有限公司}
@@ -139,19 +171,6 @@
   \item \textbf{企业文化墙及设备展示}：文化墙区域展示了 ABB 集团的 5CARA 机械臂与乘用车电气模型，反映出现代汽车生产广泛使用总线通信与高速网络。部分工位还配备无磁条导航 AGV、视频监控系统与安全标识设施，保障生产透明性与安全性。
 \end{itemize}
 
-% 汽车总装现场照片（无文字说明）
-\begin{figure}[htbp]
-  \centering
-  \begin{subfigure}[b]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6259中.jpeg}
-  \end{subfigure}\hfill
-  \begin{subfigure}[b]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6267中.jpeg}
-  \end{subfigure}
-\end{figure}
-
 \subsection{中印南方印刷有限公司}
 
 本节（归属报告第2部分）仅记录参观当日的实际操作流程与现场步骤，不展开性能指标或优缺点分析（相关分析内容已移至报告第3部分“实训典型设备或生产线重点分析”）。
@@ -166,6 +185,19 @@
   \item 检查：查看套准与色控标记是否完整，合格版暂存待印。
   \item 记录：现场口述单版大约 2–3 分钟完成（仅作当天观察记载）。
 \end{enumerate}
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6263中.jpeg}
+    \caption{工人母版制版}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6267中.jpeg}
+    \caption{工人调整印刷机}
+  \end{subfigure}
+\end{figure}
 
 \subsubsection{双色报纸机（BB 机）现场记录}
 \begin{enumerate}[label=\arabic*.]
@@ -184,6 +216,19 @@
   \item 了解到存在自动墨量/套准辅助系统，但细节未在此环节拆解；
   \item 当日仅记录色序、抽检方式与样张呈现效果，不记录性能参数。 
 \end{enumerate}
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6317中.jpeg}
+    \caption{工人操作多色印刷机}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6321中.jpeg}
+    \caption{机器人和人一同整理书堆}
+  \end{subfigure}
+\end{figure}
 
 \subsubsection{TKS 八色轮转机现场记录}
 \begin{enumerate}[label=\arabic*.]
@@ -198,16 +243,18 @@
 \subsubsection{现场记录小结}
 当天在印刷企业主要完成：数字前端 → 制版 → 多机型印刷流程的串行参观，记录了关键操作顺序、抽检方式与操作员关注点；未开展系统性能测试与产能验证，性能分析部分转入第3部分。
 
-% 印刷车间照片（无文字说明）
+% 印刷车间照片（附加文字说明）
 \begin{figure}[htbp]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{pic/_DSF6304中.jpeg}
+    \caption{女工装订书籍}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6338中.jpeg}
+    \includegraphics[width=\textwidth]{pic/_DSF6275中.jpeg}
+    \caption{机器人堆放书堆}
   \end{subfigure}
 \end{figure}
 
@@ -255,20 +302,101 @@
 \subsubsection{现场记录小结}
 本次在骆驼集团重点完成极片到化成分容的全流程走访，记录各工序表面操作顺序、设备形态与口述产出数字；未在现场进行参数量化与性能优劣比较，相关分析安排在第3部分。
 
-% 电池生产相关照片（无文字说明）
+\subsection{襄阳光瑞汽车零部件有限公司}
+本节（归属报告第2部分）记录电泳涂装线及冲压/焊接相关应用的现场流程与要点（参数为现场口述或铭牌信息），性能分析放至第3部分。
+
+\subsubsection{电泳涂装工艺}
+工艺流程：预处理 → 电泳涂装 → 清洗 → 烘干/固化 → 检验。
+
+\paragraph{产线概况}
+\begin{itemize}
+  \item 建成时间：2018 年 3 月；
+  \item 占地面积：约 1600 平方米；总投资近 1000 万元；
+  \item 覆盖产品：冲压件、铸铁件、紧固件等；
+  \item 线体长度：约 450 米；有效挂钩约 1100 个；
+  \item 电泳槽容量：设计 32 立方米；
+  \item 最大零件尺寸：长 1800\,mm × 宽 600\,mm × 高 1200\,mm；
+  \item 单挂钩最大承重：75\,kg；
+  \item 能力：可提供多品种/多规格/系列金属零件的表面电泳加工。
+\end{itemize}
 \begin{figure}[htbp]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{pic/_DSF6367中.jpeg}
+    \caption{工人调整冲压样件}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6406中.jpeg}
+    \includegraphics[width=\textwidth]{pic/_DSF6374中.jpeg}
+    \caption{工人端详冲压件}
+  \end{subfigure}
+\end{figure}
+
+\paragraph{关键工序与药剂}
+\begin{itemize}
+  \item 前处理脱脂：汉高 BONGERIE O-AK7163CF/4 与 BONDERITE C-AD550CF，配合超声波清洗，用于有效去除油污与颗粒，保证涂层附着；
+  \item 表面处理：三元磷化（表面调整剂 BONDERITE M-AC 50、磷化剂 BONDERITE M-ZN958、中和剂 BONDERITE M-AD65、促进剂 BONDERITE M-AD131），提升耐腐蚀性能。
+\end{itemize}
+
+\subsubsection{气动与液压应用}
+\begin{itemize}
+  \item 气动：用于夹紧、定位、轻载搬运等，常见工作压力 0.5--0.7\,MPa，响应快，适合高频切换的夹取动作；
+  \item 液压：用于模具开合、冲压等大载荷工序，工作压力通常 10--25\,MPa，可提供稳定的高压输出满足成形需求。
+\end{itemize}
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6393中.jpeg}
+    \caption{工人精加工}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6403中.jpeg}
+    \caption{工人焊接}
+  \end{subfigure}
+\end{figure}
+
+\subsubsection{多模具与焊接工艺}
+\begin{itemize}
+  \item 冲压成形：复杂底盘类零件在冲压工序采用 3--5 套模具逐步成型，兼顾精度与材料性能；
+  \item 弧焊机器人：采用 MIG/MAG 工艺，焊接速度约 60--80\,cm/min，焊接误差 $\le \pm 0.5\,\text{mm}$，适用于重复性高的焊接工位；
+  \item 人工焊接：用于特殊/小批量工序补充；
+  \item 下线检验：检验模具用于快速定位关键尺寸（孔位、弯曲位置、基准面），现场公差一般控制在 $\pm 0.1\,\text{mm}$；
+  \item 焊接强度：焊缝抗拉强度要求 $\ge 400\,\text{MPa}$。
+\end{itemize}
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6413中.jpeg}
+    \caption{机器人氩弧焊}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6438中.jpeg}
+    \caption{工人同机械臂协作}
   \end{subfigure}
 \end{figure}
 
 \subsection{湖北神誉机械制造有限公司}
+\subsubsection{机器人编程进阶（9/18 补充记录）}
+\begin{enumerate}[label=\arabic*.]
+  \item 复习关节/笛卡尔两种示教模式，强调“缓动—确认—记录”安全顺序；
+  \item 学习插补指令（直线/圆弧）与速度/加速度参数含义；
+  \item 观察末端 TCP 标定流程：使用治具触碰基准点 4 次求解；
+  \item 记录风险点：未设安全速度直接切换自动；空间示教未清空上次路径；力控未启用导致碰撞停止；
+  \item 讲解离线编程思路：CAD 导入 → 轨迹规划 → 仿真校验 → 下载执行。现场仅演示不实际下载。 
+\end{enumerate}
+\subsubsection{6S 深化学习（9/19 补充记录）}
+\begin{enumerate}[label=\arabic*.]
+  \item 对比初训与复盘：现场标识补齐，但部分区域“贴标签为完成”无周期检查；
+  \item 讲解 5S→6S 补强点：安全指标（近失事件、异常停留时间）；
+  \item 讨论“适度标识”原则：频率低或单一物品不贴冗余牌，避免信息噪声；
+  \item 建议：建立周度巡检清单 + 责任人签字，拍照取代重复手写记录；
+  \item 个人体会：6S 落地关键在“可量化检查项”和“问题闭环周期”，否则易流于整理表面。 
+\end{enumerate}
 本节记录现场参观齿轮/齿轴类精密加工生产流程，列出当日观察到的主要工序与设备操作顺序（参数为现场讲解口述或铭牌观察，未做独立量化验证）。
 
 \subsubsection{参观流程顺序}
@@ -295,11 +423,13 @@
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6413中.jpeg}
+    \includegraphics[width=\textwidth]{pic/_DSF6462中.jpeg}
+    \caption{工人操作数控机床}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6465中.jpeg}
+    \includegraphics[width=\textwidth]{pic/_DSF6547中.jpeg}
+    \caption{工人搬运加工工件}
   \end{subfigure}
 \end{figure}
 
@@ -308,6 +438,20 @@
 
 \subsubsection{参观流程顺序}
 极片冲孔/成型（高速自动冲床）→ 在线视觉检测与废品剔除 → 夹装/装配单元演示（部分工序模拟）→ 化成分容整线机架外观介绍 → 化成/分容批次能力说明 → 自动包装与贴标/热缩示范 → 分类入库堆垛区。
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6552中.jpeg}
+    \caption{同学参观非标自动化设备}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pic/_DSF6562中.jpeg}
+    \caption{同学讨论机器人工作}
+  \end{subfigure}
+\end{figure}
 
 \subsubsection{现场设备与记录}
 \paragraph{高速自动冲床（冲坑/冲孔工序）} 冲压频率现场口述约 120 次/分钟，冲孔/成型精度 ±0.02\,mm（以操作员口述与铭牌为准）；连续送料机构与模具导正销保持孔位一致性；废料通过下吸或侧向收集。
@@ -328,51 +472,39 @@
 \subsubsection{现场记录小结}
 该企业展示了从极片冲孔到化成分容及包装的部分自动化子系统，强调标准化接口与整线交付能力；本节仅记录流程与口述节拍，性能深度分析放在第3部分。
 
-% 自动化与 6S/包装相关照片（无文字说明）
-\begin{figure}[htbp]
-  \centering
-  \begin{subfigure}[b]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6467中.jpeg}
-  \end{subfigure}\hfill
-  \begin{subfigure}[b]{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{pic/_DSF6565中.jpeg}
-  \end{subfigure}
-\end{figure}
 
 % 章节末尾图片拼贴（无说明）
-\begin{figure}[H]
-  \centering
-  \setlength{\tabcolsep}{2pt}
-  \begin{tabular}{cccc}
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6275中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6285中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6308中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6317中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6321中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6342中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6369中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6374中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6393中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6403中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6425中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6437中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6439中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6440中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6453中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6458中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6462中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6472中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6477中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6497中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6521中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6537中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6544中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6547中.jpeg} \\
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6548中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6550中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6552中.jpeg} &
-    \includegraphics[width=0.23\textwidth]{pic/_DSF6562中.jpeg} \\
-  \end{tabular}
-\end{figure}
+% \begin{figure}[H]
+%   \centering
+%   \setlength{\tabcolsep}{2pt}
+%   \begin{tabular}{cccc}
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6275中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6285中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6308中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6317中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6321中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6342中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6369中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6374中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6393中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6403中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6425中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6437中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6439中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6440中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6453中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6458中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6462中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6472中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6477中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6497中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6521中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6537中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6544中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6547中.jpeg} \\
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6548中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6550中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6552中.jpeg} &
+%     \includegraphics[width=0.23\textwidth]{pic/_DSF6562中.jpeg} \\
+%   \end{tabular}
+% \end{figure}
